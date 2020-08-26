@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{comment}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\DeclareMathOperator*{\argmax}{argmax}
+\pagenumbering{arabic}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Mohammad Rahmani}
+\lhead{Robotics}
+
+\newcommand{\ignore}[1]{}
+\begin{document}
+	\bibliographystyle{plainnat}
+	\title{Robotics}
+	\author{Mohammad Rahmani}
+	\date{}
+	\maketitle
+	Each Robot is a physical Intelligent Agent(IA) \citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}.  
+	
+    \section{Motion planning}
+    	
+    	Footnote URL \footnote{https://reader.elsevier.com/reader/sd/pii/S0921889017300313?token=274CA5DAF1EA551A247936EE31A9C602A9B2AAD9286E0AE78E44D071795E215B7B33F81E94CBB91076F3B5BD621715CD}
+    \section{Dynamic behavior of robots /interactive behavior}
+    	In general, the dynamic behavior of a robot is defined by how the robot exchanges energy with the environment. This energy
+    	exchange can be characterized by of a set of motion and force variables at the point of interaction (also called interaction
+    	port). By imposing a specific relationship between the motion and force variables we can thus regulate the energy
+    	exchanged between robot and environment and reshape its inertial behavior. \cite{tagliabue-2017-robust-collaborative-object-transportation-using-multiple-mavs}. 
+    \section{Decision making / Planning} 
+    	Decisions related to robot actions, information sharing, and coalition formation, are essential to the successful deployment of robots in real world environments.
+    	
+    	\paragraph{Challenges robotic decision making}
+    		\begin{itemize}
+    			\item Environment uncertainty
+    			\item robot actuating
+    			\item sensing diversity
+    			\item system scalability
+    			\item real-time processing
+    			\item limited computational resources
+    		\end{itemize}
+   		\paragraph{Decisions that make robot deployment successful}
+   			\begin{itemize}
+   				\item  robot actions
+   				\item  information sharing
+   				\item  coalition formation
+   			\end{itemize}
+   	\section{Cognitive robotics}
+   	\url{https://en.wikipedia.org/wiki/Cognitive_robotics}	
+   		\subsection{Knowledge acquisition}
+   		A more complex learning approach is "autonomous knowledge acquisition": the robot is left to explore the environment on its own. A system of goals and beliefs is typically assumed.
+   		
+   		A somewhat more directed mode of exploration can be achieved by "curiosity" algorithms, such as Intelligent Adaptive Curiosity(see \url{http://www.pyoudeyer.com/oudeyer-kaplan-neurorobotics.pdf} and \url{http://science.slc.edu/~jmarshall/papers/cbim-epirob09.pdf}) or Category-Based Intrinsic Motivation.[3] These algorithms generally involve breaking sensory input into a finite number of categories and assigning some sort of prediction system (such as an Artificial Neural Network) to each. The prediction system keeps track of the error in its predictions over time. Reduction in prediction error is considered learning. The robot then preferentially explores categories in which it is learning (or reducing prediction error) the fastest.
+ 	\section{Terms and Definitions} 
+ 		\paragraph{Foraging} Foraging robots are mobile robots capable of searching for and, when found, transporting objects to one or more collection points.  
+ 		
+	\bibliography{/home/donkarlo/Dropbox/projs/research/refs.bib}
+\end{document}

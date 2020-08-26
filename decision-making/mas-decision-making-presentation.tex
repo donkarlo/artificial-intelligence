@@ -1,0 +1,421 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+
+
+%Information to be included in the title page:
+\title{MAS and MRS Decision making solutions}
+\author{Mohammad Rahmani}
+\institute{Klagenfurt University}
+\date{2020}
+
+
+
+\begin{document}
+
+\frame{\titlepage}
+
+	\begin{frame}
+		\frametitle{Introduction: Multi-agent system (MAS)}
+		 \textbf{MAS}: An intelligent system with several intelligent Agents (IA). 
+		 
+		 \vspace{0.25in}
+		 
+		 \textbf{MRS}: If the agents are physical entities with \textbf{sensors} and \textbf{actuators} then the discussion approaches toward Multi-robotic systems(MRS). 
+		 
+		 \vspace{0.1in}
+		 
+		 However, robots are facing restrictions that a software agent may not, including:
+		\begin{itemize}
+			\item Computational complexity because of their limited, onboard computation abilities
+			\item Dynamic Environments
+		\end{itemize} 
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Decision Making: Definition}
+		\textbf{Definition}: Control and planning: 
+		
+		\vspace{0.1in}
+		It determines the \textbf{sequence of actions}, or \textbf{policy}, that \textbf{agents} should perform to complete their \textbf{assigned task}.
+		
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Decision Making: Dependencies: Episodic vs Sequential}
+		\begin{itemize}
+			\item \textbf{Episodic decision making}: Output is a single action
+			\item \textbf{Sequential decision making}: Output is a sequence of actions or policy
+			\begin{itemize}
+				\item \textbf{Finite horizon}: implies that decisions need to be made for a \textbf{finite} number of \textbf{time steps}.
+				\item \textbf{Infinite horizon}: problems last \textbf{forever}.
+			\end{itemize}	
+		\end{itemize}
+	\end{frame}
+
+
+	\begin{frame}
+		\frametitle{Decision Making: Dependencies: Interaction mode}
+		\begin{itemize}
+			\item \textbf{collective}: Agents are \textbf{unaware} of other agents’ existence but share a \textbf{common goal} and each agent contributes to its completion.  
+			
+			\item \textbf{collaborative}: In collaborative interaction, agents \textbf{do not have common goals} but help each other accomplish their individual goals.
+			
+			\item \textbf{Cooperative}: Similar to collective interaction except that agents are \textbf{aware} of other agents’ \textbf{existence}. 
+			
+			\item \textbf{Coordinative}:  Agents within an environment work together to \textbf{minimize interference} and \textbf{complete their individual goals}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Decision Making: Dependencies: Centralization}
+		\begin{itemize}
+			\item \textbf{Centralized}: \textbf{Policies} are learned for \textbf{all agents} in the system.
+			\item \textbf{Decentralized}: \textbf{Each} agent \textbf{learns} its \textbf{own policies} in \textbf{parallel} to other agents.
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{MAS Decision Making: Dependencies: Other factors}
+		\begin{itemize}
+			\item Degree of \textbf{Heterogeneity}
+			\item Degree of \textbf{Scalability}
+			\item Degree of \textbf{Communication}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{MAS Decision Making: Dependencies}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.9\textwidth]{/media/donkarlo/Elements/projs/research/assets/rizk-2018-decision-making-in-multiagent-systems-a-survey-figure-1.jpg}
+			\caption{}
+			\label{fig:communication-vs-heterogeneity}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Existing solutions to MAS decision making}
+		\begin{itemize}
+			\item Markov Decision Process (MDP)
+			\item Game Theory
+			\item Swarm Intelligence
+			\item Graph Theory
+			\item Control Theory
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Markov Decision Process (MDP)}
+		
+		An MDP, a \textbf{discrete time} \textbf{stochastic control} process which has:
+		\begin{itemize}
+			\item \textbf{Fully observable} states
+			\item \textbf{Outcomes} are \textbf{influenced} by \textbf{agents}
+		\end{itemize}
+		
+		\vspace{0.1in}
+		It satisfies the \textbf{Markov property} which states that \textbf{decisions made at the current time step	rely on a finite number of previous time steps.} 
+		
+		\vspace{0.1in}
+		$(S, A, P, R, \gamma )$ where S: states, A: Actions set , P: transition probabilities, R: transition rewards, $\gamma$: Assignment of more reward to present state than future
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Multi-agent MDP (M-MDP)}
+		\textbf{Extends} MDP to MAS by assuming a \textbf{joint action space} with a \textbf{team reward model} and \textbf{fully observable environment}. 
+		
+		\vspace{0.1in}
+		A \textbf{central learner} \vspace{0.1in} a \vspace{0.1in} that should be \textbf{performed} by the agents and the \textbf{reward} is \textbf{common} to all \textbf{agents}. 
+		\begin{itemize}
+			\item Worst case: \textbf{P-Complete}
+			\item As the \textbf{number} of \textbf{agents} \textbf{increases}, the \textbf{joint state} and \textbf{action spaces’} dimensionalities \textbf{increase} \textbf{exponentially}.  
+			\item 	To \textbf{ease} the \textbf{computational burden}, \textbf{independence} is assumed to make objective functions \textbf{factorable}.
+			\item Solving the problem \textbf{iteratively} reduces the \textbf{computational complexity}.
+			\item \textbf{Distributed} implementations of the \textbf{central learner} have been developed for \textbf{factorable objective functions}.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Decentralized MDP (DEC-MDP)}
+		Individual agents view a \textbf{partially observable environment} but the \textbf{aggregate observations} of \textbf{all agents} in the MAS make the \textbf{environment fully observable}. 
+		\begin{itemize}
+			\item Worst case: \textbf{NEXP-complete}
+			\item Assuming agent \textbf{observations} and \textbf{transitions} are \textbf{independent}, the model is known as \textbf{TI dec-MDP} and its complexity is \textbf{NP-complete}. This model can be further simplified by assuming \textbf{independent rewards} to obtain a \textbf{P-complete} complexity in the worst case.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Partially Observable MDP (POMDP)}
+		A \textbf{generalization} of MDP to \textbf{partially observable environments} and is defined by $(S, A, P, \Omega, O, R, \gamma )$, where $\Omega$ represents the set of \textbf{observations}, $O$ is the \textbf{observation function}. POMDP is \textbf{PSPACE-complete}	
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Multi-agent POMDP}
+		\textbf{Extends} \underline{M-MDP} to \underline{partially observable environments}, and is \textbf{PSAPCE-complete}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Decentralized POMDP(Dec-PMDP)}
+		\textbf{Generalizes} POMDP to MAS where \textbf{rewards} are \textbf{common} and based on \textbf{joint actions} but \textbf{observations} are \textbf{individualistic}. 
+		
+		\vspace{0.1in}
+		The \textbf{goal} is to \textbf{maximize} the \textbf{reward of the entire system} as \underline{agents} \textbf{collaborate} to \underline{achieve} a\textbf{ common task}. 
+		
+		\vspace{0.1in}
+		\begin{itemize}
+			\item \textbf{Dec-POMDP-COM}: Communication among agents is \textbf{explicit}
+			\item  \textbf{Dec-POMDP}: Communication among agents is \textbf{implicit} 
+		\end{itemize}
+		\vspace{0.1in}
+		This model is \textbf{NEXP-complete}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Other MDP variants}
+		\begin{itemize}
+			\item \textbf{Networked Distributed POMDP (ND-POMDP):} Assumes \textbf{local interaction among agents} to \underline{reduce} the \textbf{computational cost} of \textbf{finding policies}.
+			\item \textbf{Interactive POMDP (I-POMDP):} A \textbf{concurrent learning approach}, \underline{generalizes} POMDP to MAS by\textbf{ modeling other agents} in the system while \textbf{maintaining} a \textbf{belief of the system state}.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{MDP: Pros and Cons}
+		\begin{itemize}
+			\item Widely adopted.
+			\item \textbf{restrictive} Markovian assumption.
+			\item Does \textbf{not} \textbf{scale} well.
+			\item It can handle agent \textbf{heterogeneity}.
+		\end{itemize}
+		\vspace{0.1in}
+		\textbf{Deep learning} has allowed the extension of MDPs from the \textbf{discrete space} to the \textbf{continuous space}, which is more suitable for \textbf{robotic MAS}.
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Game Theory}
+		Game-theoretic models include \textbf{partially observable stochastic games}, which are \textbf{sequential probabilistic games} where \textbf{payoffs} are \textbf{unknown} to players and \textbf{depend on their actions}, and the \textbf{state of the game depends on the previous state and the players’ actions}.
+		
+		\vspace{0.1in} 
+		\textbf{Strategy}: Equal to policy in MDP, is a \textbf{rule} used by agents to \textbf{select} an \textbf{action}.
+		
+		\vspace{0.1in}
+		\textbf{Equilibrium Strategy}: The \textbf{best response} of an \textbf{agent} to \underline{another} \textbf{agent’s strategy}. 
+		
+		\vspace{0.1in}
+		\textbf{Nash equilibrium} is defined as the \textbf{strategy profile} which maximizes each player’s utility knowing the strategy of others in the game.
+		
+		\vspace{0.1in}
+		\textbf{Application of RL as a solution}: RL is one and maybe the most important approach to find \textbf{optimal} or \textbf{sub-optimal} policies for game-theoretic models.
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Partially Observable Stochastic Games(POSG)}
+		\textbf{Extend} \textbf{stochastic games} to \textbf{partially observable environments} where the \textbf{payoffs} are \textbf{not known} to the players
+		
+		\vspace{0.1in}
+		\textbf{NP-hard} computational complexity class
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{POSG application in MAS}
+		\textbf{POSG} have been used to model learning \textbf{sequential decision making} in \textbf{cooperative} MAS.
+		
+		\vspace{0.1in}
+		POSG have also been used to model \textbf{cooperative MAS decision making} in \textbf{partially observable Markovian environments}.
+		
+		\vspace{0.1in}
+		This model’s solution is \textbf{intractable} as the \textbf{number} of \textbf{agents} increases. 
+		
+		\vspace{0.1in}
+		Therefore, \textbf{an approximate solution} can be computed based on \textbf{Bayesian games} to achieve \textbf{decentralized control} in robot teams with \textbf{limited communication}.
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Bayesian games}
+		\begin{itemize}
+			\item Games with \textbf{incomplete information}. Generally, these uncertainties can be modeled as \textbf{uncertainties} in \textbf{agents’ payoffs}.
+			
+			\item Bayesian Nash equilibrium \textbf{always exists}.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Game theory: Pros and Cons}
+		\begin{itemize}
+			\item S\textbf{ystematic mathematical }approach
+			
+			\item \textbf{Combining} \underline{game theory} with some \underline{heuristic approaches} such as \textbf{deep learning} might lead to \textbf{improved performance} in \textbf{robotic applications} and others.
+			
+			\item Game theoretic approaches had been mainly used in \textbf{competitive MAS}
+			
+			\item Some models have gained popularity in \textbf{cooperative MAS} due to the \textbf{agents’ capabilities} of \textbf{modeling other agents} in the game. (Perfect in \textbf{Multi-robot systems} in which \textbf{communication} is \textbf{not available})
+			
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Swarm Intelligence}
+		\begin{itemize}
+			\item Swarm intelligence describes the behavior of \textbf{decentralized} \textbf{cooperative} \textbf{agents}, working toward a \textbf{common global goal}.
+			
+			\item \textbf{Self-organized} and \textbf{distributed} \textbf{behavior} of \textbf{locally aware} and \textbf{locally interacting} agents are pillars of swarm intelligence.
+			
+			\item Systems modeled in this fashion generally consist of many \textbf{autonomous} but \textbf{homogeneous agents} implementing \textbf{simple rules} with \textbf{agent interactions restricted to local neighborhoods}.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Swarm Intelligence: Biology inspired}
+		\begin{itemize}
+			\item \textbf{Bee colony behavior}: based on \textbf{direct communication} among agents performing a \textbf{series of moves} for a certain duration based on the \textbf{strength} or \textbf{fitness} of the solution. This \textbf{recruits} other agents to the \textbf{most fit solution}. 
+			
+			\vspace{0.1in}
+			\textbf{Navigation} is based on \textbf{path integration} where agents continuously \textbf{update a vector} indicating the \textbf{position} of the \textbf{start location}.
+			
+			\item \textbf{Ant colony optimization (ACO)}: is a class of algorithms that rely on \textbf{indirect communication}. 
+			
+			\vspace{0.1in}
+			\textbf{Navigation} is based on \textbf{depositing pheromones} along the \textbf{trail}. A more \textbf{fit solution} results in \textbf{stronger pheromones} on the trail that lead to recruiting more agents.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Swarm Intelligence: Biology inspired: Part 2}
+		\begin{itemize}
+			\item \textbf{PSO(particle swarm optimization)}: is inspired by \textbf{flocks of bird} and \textbf{schools of fish}. Agents \textbf{navigate} the environment searching for better solutions using principles from birds’ movements. 
+			
+			\item \textbf{Pigeon inspired optimization} algorithm relies on the \textbf{magnetic field}, \textbf{sun} and \textbf{landmarks} to \textbf{achieve path planning}.
+			
+			\item \textbf{Distributed implementations of ACO}  and \textbf{PSO} have been developed to \textbf{speedup convergence}.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Swarm Intelligence: Pros and Cons}
+		\begin{itemize}
+			\item Robustness
+			\item Flexibility
+			\item Scalability
+			\item Fault tolerance
+			\item Limited heterogeneity tolerance(Sometimes they can be divided into a small number of homogeneous clusters)
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Graph theory}
+		Decision making in MAS can be modeled as \textbf{graphs} with \textbf{nodes} representing \textbf{agents} and \textbf{edges} representing \textbf{interactions} and \textbf{information flow} among \textbf{agents}
+		
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Graph theory: Influential Diagram(ID)}
+		
+		\textbf{Decision networks} that provide a framework for decision making by \textbf{adding} \textbf{actions} and \textbf{utilities} to \textbf{Bayesian networks} and they are reducible to decision trees. 
+		
+		\vspace{0.1in}
+		\textbf{Dynamic IDs (DIDs)} extend IDs to \textbf{sequential decision making} problems by \textbf{combining} \textbf{DP} with \textbf{IDs} and have been viewed as computationally \textbf{equivalent} to \textbf{POMDP}.
+		 
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Graph theory: Multi-agent ID(MAID)}
+		Represent games with \textbf{imperfect information} and are an \textbf{alternative} to the \textbf{normal} and \textbf{extensive} forms of \textbf{game representation}. They can be converted either to \textbf{extensive form games} or to \textbf{IDs} and then solved.
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Graph theory: Network ID(NID)}
+		Built on top of \textbf{MAIDs} to account for \textbf{uncertainties} in \textbf{other agents’ decision making} and \textbf{hierarchy of beliefs}.
+		
+		\vspace{0.1in}
+		(Both MAID and NID are applicable to \textbf{episodic decision} making only.) 
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Graph theory: Interactive DIDs}
+		 It is A MAS \textbf{extension} of \textbf{DIDs} and can be viewed as \textbf{computational} counterparts of \textbf{I-POMDP}. Models of other agents are \textbf{clustered} to \textbf{reduce computational complexity} but lead to \textbf{approximate solutions}.
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Graph theory: Pros and Cons}
+		\textbf{Advantages}
+		\begin{itemize}
+			\item Models the interaction of agents
+			\item Allowing them to \textbf{exchange information} and \textbf{make decision} accordingly.
+			\item It's combination with \textbf{MDP} and \textbf{control theory} makes it applicable to MAS.
+			\item Exploiting special structures such as \textbf{sparsely connected dense subgraphs} are a common approach to \textbf{reduce computational} cost and \textbf{improve performance}.
+		\end{itemize}
+		
+		\textbf{Disadvantages}
+		\begin{itemize}
+			\item  Computational complexity of this approach increases \textbf{Exponentially} in \textbf{densely} \textbf{Connected} \textbf{graphs} with many nodes (agents)
+		\end{itemize}
+	
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Control theory}
+		Aims to\textbf {control physical systems} by designing controllers using \textbf{modify} the \textbf{input} to achieve the desirable \textbf{output}.
+	\end{frame}
+		
+	\begin{frame}
+		\frametitle{Control theory: Distributed Controllers}
+		\begin{itemize}
+			\item Distributed controllers are designed by \textbf{combining concepts} from \textbf{control} and \textbf{graph theory}. 
+			\item \textbf{Distributed optimization} is an \underline{integral} part of \textbf{distributed control}.
+		\end{itemize}
+		\textbf{Unlike} other \underline{approaches}, \textbf{distributed cooperative controllers} designed using control and graph theory can be \textbf{mathematical validated} to prove \textbf{optimality}, \textbf{stability}, \textbf{robustness}, and \textbf{convergence}, to name a few properties.
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Control theory: Distributed Controllers: Application}
+		\begin{itemize}
+			\item A \textbf{Lyapunov-based} distributed \textbf{lead-follower control system} was developed that \textbf{scaled} to \textbf{large MAS} when the \textbf{interaction topology} is an \textbf{undirected graph}.
+			
+			\item \textbf{Distributed consensus tracking} is achieved by designing \textbf{distributed adaptive controllers} in \textbf{weakly connected}, directed graphs
+			
+			\item  \textbf{Stochastic sampling} in \textbf{leader-follower consensus} problems has been shown to improve \textbf{scalability} of \textbf{MAS}.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Control theory: Pros and Cons}
+		\textbf{Advantages}
+		\begin{itemize}
+			\item Adopts systematic mathematical approaches to develop controllers
+			\item Necessary in some applications where sufficient data is not available
+			\item  Mathematically proven optimal controllers are
+			crucial like in aviation or military domains
+		\end{itemize}
+		\textbf{Disadvantages}
+		\begin{itemize}
+			\item Some systems are simply too complex and intractable for such methods 
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Challenges}
+		\begin{itemize}
+			\item \textbf{Scalability}
+			
+			\item \textbf{Computational Complexity}
+			
+			\item \textbf{Dynamic Environments}
+			
+			\item \textbf{System Heterogeneity}
+			
+			\item \textbf{Big Data}
+			
+			\item \textbf{Evaluation Standards}  Generally evaluated based on \textbf{policy optimality} and their \textbf{time} and \textbf{space complexity}.
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Comparison}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.9\textwidth]{/media/donkarlo/Elements/projs/research/assets/rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey-table-3.jpg}
+			\caption{Comparison}
+			\label{fig:decision-making-pros-and-cons}
+		\end{figure}
+	\end{frame}
+\end{document}

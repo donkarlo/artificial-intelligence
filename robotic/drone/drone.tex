@@ -1,0 +1,167 @@
+\documentclass{article}
+\usepackage{comment}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\pagenumbering{arabic}
+\usepackage{multicol}
+\usepackage{siunitx}
+\usepackage{soul}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Mohammad Rahmani}
+\lhead{SA drone swarm for transportation}
+
+\newcommand{\ignore}[1]{}
+\begin{document}
+	\bibliographystyle{plainnat}
+	\title{Self-aware drone swarm for transportation}
+	\author{Mohammad Rahmani}
+	\date{}
+	\maketitle
+	
+	\section{Motion planning (Estimation, control, and planning )/Path planning}
+		\paragraph{General definition}
+		The fundamental problem of motion planning is obtaining a collision-free path from start to goal for a robot that moves in a
+		static and totally known environment that consists of one or many obstacles  \cite{mohanan-2018-a-survey-of-robotic-motion-planning-in-dynamic-environments}[1].
+		Motion planning, also \textbf{path planning} (also known as the navigation problem or the piano mover's problem) is computational problem to find a sequence of valid configurations that moves the object from the source to destination \footnote{\url{https://en.wikipedia.org/wiki/Motion_planning}}.
+		
+		\paragraph{Approaches in static environment}
+			For wikipedia see \footnote{\url{https://en.wikipedia.org/wiki/Motion_planning}} section Algorithms
+			\subparagraph{Sampling-based} 
+			The idea of the sampling-based planning is to random sample the configuration space C and classify the samples as free or non-	free using collision detection. The free samples are stored in a roadmap and the nearest free samples are connected by edges.
+			Then, the path in the roadmap corresponds to a motion in the workspace \cite{spurny-2019-cooperative-transport-of-large-objects-by-a-pair-of-unmanned-aerial-systems-using-sampling-based-motion-planning}.
+			
+			footnote \footnote{\url{http://planning.cs.uiuc.edu/ch5.pdf}}.
+			\begin{itemize}
+				\item \textbf{Probabilistic Roadmaps (PRM)}: \cite{lavalle-1998-rapidly-exploring-random-trees-a-new-tool-for-path-planning} which is used in \cite{spurny-2019-cooperative-transport-of-large-objects-by-a-pair-of-unmanned-aerial-systems-using-sampling-based-motion-planning}
+				\item \textbf{Rapidly Exploring Random Trees (RRT)}: \cite{kavraki-1996-probabilistic-roadmaps-for-path-planning-in-high-dimensional-configuration-spaces} which is used in \cite{spurny-2019-cooperative-transport-of-large-objects-by-a-pair-of-unmanned-aerial-systems-using-sampling-based-motion-planning}
+				The basic RRT builds a configuration tree T rooted at at initial state $q_{init}$ by sub-sequence adding of new reachable feasible configuration. In each iteration of the tree construction, a configuration qrand is randomly sampled from the whole
+				configuration space $C$ and its nearest neighbor $q_{near} \in T$ in the tree is found. The configuration $q_{near}$ is then expanded using the motion model to obtain new configurations reachable from $q_{near}$ . The new positions are obtained by applying control inputs to the motion model over time $\Delta t$. From these configurations, the nearest one towards $q_{rand}$ is selected and added to the tree. The algorithm terminates if the goal configuration is approached within a given distance or if the maximum number of iterations is reached.
+					\begin{itemize}
+						\item Guided RRT: \cite{vonasek-2009-rrt-path-a-guided-rapidly-exploring-random-tree} in which the guided path (a path that ) The guiding path can be computed
+						as a simple geometric path, e.g. using \textbf{Voronoi diagram} or
+						\textbf{Triangular-based} methods.
+						\item Transition-based RRT \cite{spurny-2019-cooperative-transport-of-large-objects-by-a-pair-of-unmanned-aerial-systems-using-sampling-based-motion-planning}[19]
+					\end{itemize}
+				
+			\end{itemize}
+				\cite{lavalle-1998-rapidly-exploring-random-trees-a-new-tool-for-path-planning} which is used by 
+				It also uses \cite{spurny-2019-cooperative-transport-of-large-objects-by-a-pair-of-unmanned-aerial-systems-using-sampling-based-motion-planning}[15][16][17][18][19]
+		
+		\paragraph{Approaches for dynamic environment}
+			Dynamic environment means obstacles movements etc
+			\cite{mohanan-2018-a-survey-of-robotic-motion-planning-in-dynamic-environments} is a survey and the list of the approaches are taken out of it.
+			\cite{masehian-2007-robot-motion-planning-in-dynamic-environments-with-moving-obstacles-and-target}
+			\subparagraph{Artificial potential fields (APF)}
+			Based on force field idea where the goal is the attractor and the obstacles are repulsive forces \cite{mohanan-2018-a-survey-of-robotic-motion-planning-in-dynamic-environments,baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}.  
+			\subparagraph{Accessibility graph (AG)}
+			\subparagraph{Configuration space (CS), state time space (STS)}
+			\subparagraph{Velocity based motion planning}
+			\subparagraph{A thousand more}
+			see \cite{mohanan-2018-a-survey-of-robotic-motion-planning-in-dynamic-environments}
+		\paragraph{With a simple camera and an IMU}
+			\cite{loianno-2017-estimation-control-and-planning-for-aggressive-flight-with-a-small-quadrotor-with-a-single-camera-and-imu}
+		
+		\paragraph{Collision avoidance}
+		\paragraph{In 3d environment}
+		\cite{wang-2015-three-dimensional-path-planning-for-unmanned-aerial-vehicle-based-on-interfered-fluid-dynamical-system}
+		\subsection{Trajectory Tracking / tracking control}
+			\cite{tagliabue-2017-robust-collaborative-object-transportation-using-multiple-mavs} has used \cite{kamel-2016-linear-vs-nonlinear-mpc-for-trajectory-tracking-applied-to-rotary-wing-micro-aerial-vehicles} and \cite{kamel-2017-model-predictive-control-for-trajectory-tracking-of-unmanned-aerial-vehicles-using-robot-operating-system}.
+			see footnote \footnote{\url{https://www.researchgate.net/publication/320913735_Trajectory_tracking_in_quadrotor_platform_by_using_PD_controller_and_LQR_control_approach}}
+			
+			\paragraph{Algorithms}
+				\subparagraph{Using both a linear model predictive controller (MPC) and non-linear state feedback}
+			\paragraph{PID control for disturbance rejection}
+				To make a drone follow its trajectory
+				See footnote URL\url{https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8741829}
+		\subsection{Disturbance rejection}
+			\paragraph{In trajectory tracking}
+			See footnote \footnote{\url{https://journals.sagepub.com/doi/abs/10.1177/0142331220909003}}
+		\subsection{Stability}
+			\paragraph{Position and altitude control}
+			\cite{nascimento-2019-position-and-attitude-control-of-multi-rotor-aerial-vehicles-a-survey}
+			\paragraph{Quadrotors} Quadrotors are underactuated systems by design, since they possess six degrees of freedom but only four actuating motors (lift-generating propellers). The system is categorized as inherently unstable in its open-loop operation due to the underactuated property but its stability can be achieved via closed-loop control\footnote{\url{https://www.researchgate.net/post/Why_are_quadrotors_inherently_unstable}}
+		\subsection{State estimation}
+			\paragraph{Definition} to achieve state estimation and localization relative to a scene.
+			\paragraph{Approches/Algorithms}
+			It deals with techniques such as Kolman filter. 
+			See footnote \footnote{\url{https://www.mdpi.com/2504-446X/3/1/19}}. 
+				\subparagraph{UKF}
+			\paragraph{Simultaneous Localization and Mapping (SLAM)}
+				\subparagraph{Visual-inertial }
+				\cite{nikolic-2014-a-synchronized-visual-inertial-sensor-system-with-fpga-pre-processing-for-accurate-real-time-slam}
+				\cite{bloesch-2015-robust-visual-inertial-odometry-using-a-direct-ekf-based-approach}
+				See footnote \footnote{\url{https://www.sciencedirect.com/science/article/pii/S2405896317302859}}
+		\subsection{General}
+			\cite{powers-2015-quadrotor-kinematics-and-dynamics}
+			Four forces of flight
+			\begin{itemize}
+				\item Thrust vs Drag (To move the drone forward)
+				\item Lift vs Weight (To lift the drone up)
+			\end{itemize}
+			
+			Six degrees of freedom
+			\begin{itemize}
+				\item \textbf{Pitch}: Orientation along the backward-forward axis 
+				\item \textbf{Roll}: Orientation along the left-right axis
+				\item \textbf{Yaw}: Orientation along the up-down axis
+			\end{itemize}
+			
+			Components of a drone
+			\begin{itemize}
+				\item \textbf{Telemetry module}: to receive back information from the drone
+			\end{itemize}
+		
+	
+	\section{Auto pilot}
+		\paragraph{Companies}
+		Such as Pixhawk auto pilot  \footnote{\url{https://pixhawk.org/}}
+	\section{Sensors}
+		\paragraph{Altitude meter}
+		\url{http://downloads.hindawi.com/journals/mpe/2013/587098.pdf}
+		\url{https://www.researchgate.net/publication/309486306_Altitude_Control_of_a_Quadcopter}
+		\paragraph{For obstacle detection the such sensor may contribute}
+		\url{https://www.dronezon.com/learn-about-drones-quadcopters/top-drones-with-obstacle-detection-collision-avoidance-sensors-explained/}
+		\paragraph{Exteroceptive sensors}
+			\begin{itemize}
+				\item \textbf{Stereo Vision}:
+				\item \textbf{Time-of-Flight}: \url{https://en.wikipedia.org/wiki/Time-of-flight_camera}
+				\item \textbf{Lidar}:
+				\item \textbf{Infra-red}:
+				\item \textbf{ultra-sound(Sonar)}:
+				\item \textbf{Monocular Vision}:
+			\end{itemize}
+		\paragraph{Proprioceptive sensors}
+			\url{https://3dinsider.com/drone-sensors/}
+			\paragraph{Accelerometer}: Measures acceleration in all 3 axis
+			\paragraph{Gyroscope}: Measure angular rate in all 3 axis
+			\paragraph{Compass}: Determines heading
+			\paragraph{GPS}: Determines position based on GPS/GLONASS satellites
+			\paragraph{Power module}: Power supply to flight controller
+			\paragraph{mmWave sensor}
+			\paragraph{IMU}: Inertial measurement unit \url{https://en.wikipedia.org/wiki/Inertial_measurement_unit}
+				\subparagraph{MEMS inertial sensors}
+				See footnote for their application\footnote{\url{https://ieeexplore.ieee.org/document/4610859}}
+			\paragraph{Force sensors}: Such as this company \footnote{\url{https://www.tekscan.com/products-solutions/embedded-force-sensors}}
+		Always consider sensor fusions
+	\section{Social}
+		\paragraph{People}
+		Follow the url \url{https://scholar.google.it/citations?view_op=search_authors\&hl=en\&mauthors=label:mavs} to see people interested in MAV. 
+			\subparagraph{giuseppe-loianno} \url{https://engineering.nyu.edu/faculty/giuseppe-loianno} with thousands of citations in this field and he also is an expert in sensor fusion.
+			\subparagraph{Byung Joon Lee} \url{https://scholar.google.it/citations?hl=en\&user=aH-8urcAAAAJ\&view_op=list_works\&citft=1\&citft=2\&citft=3\&email_for_op=mohammad.rahmani.xyz%40gmail.com&gmla=AJsN-F44tTmgP_9kMnERit5P2Ot03MYngw_9qmDB904GX0B07sXFFGoUhMC6yh8sDwCgsw4oinKq2ljx02YbwB2aCBCteHQ1iy9XzFBNYCV3Sns-MylEhG_BAr8GXXGWZ5-sY2_lLla6jboK51H_6qvayyc9RJCa-kMYAsFVkWwL2OAsBpJwH8LRJ0OgzcQOT96WiKX5IV4iufgari_ZHz5-pVDhfhYAYfYbTN0laxLY12wXx0-2Q1nhWKMm_i14YH3C9J_UwhicmXuQun-3MJHG5EH3QJI5EsJWUz7_cB7gyf0kK5kTc-9fAw0SW7XCG85Kgabtzsa1v8VAX1PrdUUphy5gimBhXA}
+				
+			\subparagraph{Vijay kumar} Scholar \url{https://scholar.google.com/citations?hl=en\&user=FUOEBDUAAAAJ\&view_op=list_works\&sortby=pubdate}
+			
+			\subparagraph{Daniel Mellinger}
+			\url{https://scholar.google.com/citations?user=hI8nho4AAAAJ\&hl=en}
+	\bibliography{/home/donkarlo/Dropbox/projs/research/refs.bib}
+\end{document}

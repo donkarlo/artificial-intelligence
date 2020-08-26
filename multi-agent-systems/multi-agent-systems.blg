@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: multi-agent-systems.aux
+The style file: plainnat.bst
+Database file #1: /home/donkarlo/Dropbox/projs/research/refs.bib
+Too many commas in name 1 of "W. Alshabi, S. Ramaswamy, M. Itmi, H. Abdulrab" for entry alshabi-2007-coordination-cooperation-and-conflict-resolution-in-multi-agent-systems
+while executing---line 1347 of file plainnat.bst
+Too many commas in name 1 of "W. Alshabi, S. Ramaswamy, M. Itmi, H. Abdulrab" for entry alshabi-2007-coordination-cooperation-and-conflict-resolution-in-multi-agent-systems
+while executing---line 1347 of file plainnat.bst
+Warning--empty booktitle in chai-2018-language-to-action-towards-interactive-task-learning-with-physical-agents
+Warning--empty booktitle in ciprich-2008-the-architecture-of-an-intelligent-agent-in-mas
+Warning--empty journal in ferrera-2014-multi-robot-operation-system-with-conflict-resolution
+Warning--empty journal in jiang-2019-multi-robot-planning-with-conflicts-and-synergies
+Warning--empty booktitle in santos-2018-detection-and-resolution-of-normative-conflicts-in-multi-agent-systems-a-literature-survey
+Too many commas in name 1 of "W. Alshabi, S. Ramaswamy, M. Itmi, H. Abdulrab" for entry alshabi-2007-coordination-cooperation-and-conflict-resolution-in-multi-agent-systems
+while executing---line 1429 of file plainnat.bst
+Too many commas in name 1 of "W. Alshabi, S. Ramaswamy, M. Itmi, H. Abdulrab" for entry alshabi-2007-coordination-cooperation-and-conflict-resolution-in-multi-agent-systems
+while executing---line 1429 of file plainnat.bst
+Warning--empty booktitle in alshabi-2007-coordination-cooperation-and-conflict-resolution-in-multi-agent-systems
+You've used 15 entries,
+            2773 wiz_defined-function locations,
+            674 strings with 8369 characters,
+and the built_in function-call counts, 6838 in all, are:
+= -- 566
+> -- 444
+< -- 6
++ -- 150
+- -- 135
+* -- 563
+:= -- 1069
+add.period$ -- 46
+call.type$ -- 15
+change.case$ -- 89
+chr.to.int$ -- 15
+cite$ -- 36
+duplicate$ -- 321
+empty$ -- 561
+format.name$ -- 154
+if$ -- 1411
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 16
+newline$ -- 83
+num.names$ -- 60
+pop$ -- 199
+preamble$ -- 1
+purify$ -- 75
+quote$ -- 0
+skip$ -- 231
+stack$ -- 0
+substring$ -- 159
+swap$ -- 18
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 160
+warning$ -- 6
+while$ -- 56
+width$ -- 0
+write$ -- 190
+(There were 4 error messages)

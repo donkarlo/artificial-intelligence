@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: drone.aux
+The style file: plainnat.bst
+Database file #1: /home/donkarlo/Dropbox/projs/research/refs.bib
+Warning--empty booktitle in baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach
+Warning--empty journal in kamel-2016-linear-vs-nonlinear-mpc-for-trajectory-tracking-applied-to-rotary-wing-micro-aerial-vehicles
+Warning--empty chapter and pages in kamel-2017-model-predictive-control-for-trajectory-tracking-of-unmanned-aerial-vehicles-using-robot-operating-system
+Warning--empty publisher in kamel-2017-model-predictive-control-for-trajectory-tracking-of-unmanned-aerial-vehicles-using-robot-operating-system
+Warning--empty booktitle in lavalle-1998-rapidly-exploring-random-trees-a-new-tool-for-path-planning
+Warning--empty journal in nascimento-2019-position-and-attitude-control-of-multi-rotor-aerial-vehicles-a-survey
+Warning--empty booktitle in nikolic-2014-a-synchronized-visual-inertial-sensor-system-with-fpga-pre-processing-for-accurate-real-time-slam
+Warning--empty chapter and pages in powers-2015-quadrotor-kinematics-and-dynamics
+Warning--empty publisher in powers-2015-quadrotor-kinematics-and-dynamics
+Warning--empty journal in tagliabue-2017-robust-collaborative-object-transportation-using-multiple-mavs
+Warning--empty chapter and pages in vonasek-2009-rrt-path-a-guided-rapidly-exploring-random-tree
+Warning--empty publisher in vonasek-2009-rrt-path-a-guided-rapidly-exploring-random-tree
+Warning--empty journal in wang-2015-three-dimensional-path-planning-for-unmanned-aerial-vehicle-based-on-interfered-fluid-dynamical-system
+You've used 16 entries,
+            2773 wiz_defined-function locations,
+            668 strings with 9130 characters,
+and the built_in function-call counts, 8239 in all, are:
+= -- 672
+> -- 568
+< -- 8
++ -- 190
+- -- 174
+* -- 681
+:= -- 1255
+add.period$ -- 49
+call.type$ -- 16
+change.case$ -- 103
+chr.to.int$ -- 16
+cite$ -- 45
+duplicate$ -- 379
+empty$ -- 636
+format.name$ -- 196
+if$ -- 1729
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 19
+newline$ -- 89
+num.names$ -- 64
+pop$ -- 258
+preamble$ -- 1
+purify$ -- 90
+quote$ -- 0
+skip$ -- 295
+stack$ -- 0
+substring$ -- 217
+swap$ -- 51
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 161
+warning$ -- 13
+while$ -- 60
+width$ -- 0
+write$ -- 198
+(There were 13 warnings)

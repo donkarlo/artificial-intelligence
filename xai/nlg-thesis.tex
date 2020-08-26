@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage{comment}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\pagenumbering{arabic}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Mohammad Rahmani}
+\lhead{Narretion from data}
+
+\newcommand{\ignore}[1]{}
+\begin{document}
+	\title{Autonomous machine, obstacle-solution, self-explanation generator}
+	\author{Mohammad Rahmani, Alonso Moral Jose Maria}
+	\maketitle
+		\section{Abstract} 
+		We are planning to convert input data about charactrestics of a set of given objects, preferably in json format, to a short story driven from a set of short stories. 
+		\paragraph{keywords}
+			\subparagraph{text entailment}
+			\subparagraph{Narrative generation}
+		\section{Introduction}
+		\subparagraph{Importance}
+		An individual sees objects with their characteristics through Google glass  and receives personalized very short stories driven from a corpora of short stories preferably strongly tied to interests of the subject individual. 
+		\section{Methodology}
+			\paragraph{Input} 
+				\textbf{Data points}
+				\begin{itemize}
+					\item input 1 JSON Format: \{"location":\{"title":"alley","quality":\{"long","narrow"\},"time":"sunset", "old man"\}
+					\item input 2: JSON Format: \{"location":\{name:"bus","time":"night"\},"child"\}
+					.\\
+					.\\
+					.\\
+				\end{itemize}
+				\textbf{Corpra}
+				\begin{itemize}
+					\item The sun was setting at the end of the long, narrow, paved alley. First I saw the dark, small-sized figure of a  lady crossing the far-end width of the alley with a baby carrier. Then dark, bent figure of an old man with a crane.  Uncertainly, I felt his black figure stopped in the middle and gazed at me for a few seconds before continuing his way. A vague bit of regret formed on a wall of my heart and slided into one of its dark alleys.
+					\item The empty bus stopped in the station for passengers to ride on. One after another, they faced empty seats to chose among. Then they whether chose successive subjects to think or absentees to message on their phones. Late at night, when the driver parked and left the bus, he saw a random child-aged absentee penetrated by a random thought sitting behind the steering wheel, gazing at him while pushing his nose against the glass. 
+				\end{itemize}
+			\paragraph{Output}
+				\subparagraph{Sample}
+					output: The bus turned its head to the narrow long alley. First a lady with a baby rode on. Then, an old man with a crane. Once the bus started to move away, I felt the dark figure of the old man gazing at me. 
+				\subparagraph{Mathematic representation}
+					Proposing a model which maximizes g $p(W|D)$ which should be decomposed to $\prod_{i=1}^{|W|}p(w_i|D)$ where $w_i\in W$ and $d_i \in D$
+					An encoder-decoder LSTM must be used because E is a sequence and $|E|\ne |L|$. 
+				\subparagraph{ideas}
+					\begin{itemize}
+						\item Text entailment from british professor
+						\item buddlehopy data to text
+						\item event extraction
+						\item LSTM
+						\item GAN
+						\item graph of events from saarland university
+						\item using information extraction techniques such as those in buddupully to find out with corpus excerpts match better the input data. 
+						\item Text graphing like that of Dr. Demberg students' story generation
+						\item text labeling
+						\item event extraction between data points using neural networks
+						\item start and ending data and event selection using neural networks
+						\item attentional learning 
+						\item beam search 
+						\item information extraction
+						extraction of a plan (start,...,end) such as that of Puduppully
+						\item encoder-decoder
+					\end{itemize}
+			\paragraph{Approach}
+			\subsection{Corpus}
+				\paragraph{collection strategies}
+				\paragraph{Existing corpus}
+		\subsection{Training}
+			\paragraph{Information Extraction from the corpus to build a content plan}
+		\section{Results}
+			\subsection{Human evaluation}
+				\paragraph{Obstacle,solution recognition}
+				\paragraph{Surface realization}
+				\paragraph{Crowdsourcing}
+			\subsection{Machine evaluation}
+				\paragraph{Obstacle,solution recognition}
+				\paragraph{Surface realization}
+		\section{In future}
+			\paragraph{Input}
+			\paragraph{Output}
+			
+		\section{Todo}
+		\begin{thebibliography}{9}
+			\bibitem{corpus-idea-1}
+			Learning to Give Route Directions from Human Demonstrations http://www2.informatik.uni-freiburg.de/~kretzsch/pdf/osswald14icra.pdf
+		\end{thebibliography}
+\end{document}

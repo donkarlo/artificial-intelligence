@@ -1,0 +1,166 @@
+\documentclass{article}
+\usepackage{comment}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\DeclareMathOperator*{\argmax}{argmax}
+\pagenumbering{arabic}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Mohammad Rahmani}
+\lhead{Artificial Intelligence}
+
+\newcommand{\ignore}[1]{}
+\begin{document}
+	\bibliographystyle{plainnat}
+	\title{Artificial Intelligence}
+	\author{Mohammad Rahmani}
+	\date{}
+	\maketitle
+	
+	The website at footnote says\footnote{\url{https://theengineeringofconsciousexperience.com/types-of-artificial-intelligence/}} There are four types of AI
+	\begin{itemize}
+		\item Narrow AI
+		\item General AI
+		\item Super AI
+		\item Reactive machines
+		\item Limited memory
+		\item Theory of mind
+		\item Self awareness
+	\end{itemize}
+	
+	\section{Tools}
+		\section{Evolutionary computation}
+		Wikipedia \footnote{\url{https://en.wikipedia.org/wiki/Evolutionary_computation}}
+	\section{Proposed prespectives}
+		\paragraph{From facebook}To verify facebook's view on what are particularities of machine intelligence check \cite{mikolov-2016-a-roadmap-towards-machine-intelligence}.
+	
+	\section{Intelligent Agents (IA)}
+	 An intelligent agent is an autonomous entity capable of 
+	 \begin{itemize}
+	 	\item performing actions on its environment
+	 	\item perceiving its environment
+	 	\item aiming to accomplish a goal
+	 \end{itemize}
+	  \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey} [41]). 
+	 
+	 It can be a \textbf{physical entity such as robots with sensors and actuators} or a\textbf{ virtual entity such as software agents}. A very good philosophical discussion on IA can be found at \cite{ngobye-2010-types-and-priorities-of-multi-agent-system-interactions}.
+	 
+	 \paragraph{Ego-thing} go-Things are defined as intelligent
+	 systems that perceive their internal parameters and adapt them-
+	 selves when facing non-stationary situations. \citet{kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things}[5]
+	 
+	 \paragraph{Qualities of a self-aware IA}
+	 (see document on self-awareness)
+	 Must implement well the following characteristics from self awareness point of view which are core capabilities of agents operating
+	 in highly dynamic, interactive, and uncertain environments
+	 in order to achieve reasonable autonomy.
+	 \begin{itemize}
+	 	\item initialization
+	 	\item inference
+	 	\item anomaly detection
+	 	\item model creation
+	 	\item interface with control
+	 \end{itemize}
+	  However, genuine autonomous systems are required to fulfill a variety of sys-
+	 tem properties, including efficiency (minimizing the resource
+	 consumption), security (protecting against threads), and safety
+	 (operating in conformance with requirements).
+	 
+	 \paragraph{Brain in an IA} Agents \textbf{communicate} with each other, and \textbf{make decisions} on their own in order to achieve their individual as well as collective goals. To this end they are equipped with a  ‘brain’ \citep{ciprich-2008-the-architecture-of-an-intelligent-agent-in-mas}.
+	 
+	 \paragraph{Self-awareness} self-awareness (SA) is a capability of an autonomous system to describe the acquired
+	 experience about itself and its surrounding environment with appropriate models and correlate them incrementally with the
+	 currently perceived situation to expand its knowledge continuously. At a rather abstract level, SA can be defined as the capacity to become the object of one’s own attention, which arises when an agent focuses not only on the external environment but also on the internal milieu. \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}. Private self-aspects relate to externally unobservable events and characteristics such as emotions, physiological sensations, perceptions, values, goals, and motives, whereas public self-aspects are visible attributes such as behavior and physical appearance.
+	 
+	 
+	 \paragraph{Belief-Desire-Intentions (BDI)-like definition}
+	 A well-known agent theory  is the Belief-Desire-Intentions (BDI) framework that was first proposed by Bratman \citep{bratman-1999-intention-plans-and-practical-reason}. 
+	 
+	 BDI  describes \textbf{beliefs} as the representation of the agent’s \textbf{knowledge} about the \textbf{current world/environment} and \textbf{messages from other agents} as well as the internal information. \textbf{Desires} represent a state that the agent is trying to achieve and ‘intentions’ are the chosen means to achieve the agent’s desires, generally implemented as plans. Thus, an agent is characterised by its beliefs, goals (desires), and intentions – it will intend to do what it believes will achieve its goals given its beliefs about the world.  Additional to these three components, a BDI agent is usually assumed to have a plan library – a set of “plans as recipes” that it can use to achieve particular goals given particular preconditions.
+	 Figure \cite{bratman-1999-intention-plans-and-practical-reason} - 1.  
+	 
+	 \paragraph{Roles of an IA}
+		 An intelligent agent exhibits the fundamental properties of
+		 \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey} [42]
+		 \begin{itemize}
+		 	\item perception
+		 	\item reasoning
+		 	\item learning
+		 	\item decision making
+		 	\item problem solving
+		 	\item interaction
+		 	\item communication
+		 \end{itemize}
+	 
+	 \paragraph{Evaluation}
+		  It is evaluated based on its (\citet{rizk-2018-decision-making-in-multiagent-systems-a-survey} [42])
+		 \begin{itemize}
+		 	\item solution optimality
+		 	\item generality
+		 	\item robustness
+		 	\item efficiency
+		 	\item autonomy
+		 	\item ability to learn and improve
+		 \end{itemize}
+	  
+	  \paragraph{categorization based on underlying architecture \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey} [41]}
+		 \begin{itemize}
+		 	\item simple reflex agents:  react to current sensory input only 
+		 	\item model-based reflex agents: keep an internal state of the environment
+		 	\item goal-based agents:  perform actions that lead to accomplishing their goals
+		 	\item utility-based agents:  maximize their utility
+		 \end{itemize}
+	 
+	 \paragraph{Policy} A function that maps status to an action in an IA(Intelligent agent) action.  A policy is \textbf{optimal} if it has the highest utility \citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}. 
+	 
+	 \section{Swarm intelligence(SI)} 
+	  (->multi-agent systems)
+	 
+	 \section{Decision making/planning}
+	 	\paragraph{Multi-agent systems} To see its application in multi-agent systems see muti-agent systems decision making section
+	 	\paragraph{Robotics} See robotics section decision making
+	 	
+	 	\subsection{General}
+	 	Decision making is planning and control. It enables an agent to accomplish its goals by determining what action to perform. \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}.
+	 	It determines the sequence of actions, or policy, that agents should perform to complete their assigned task once the complex tasks have been decomposed to sub-tasks and allocated to cooperating groups of agents. 
+	 	
+	 	\paragraph{Episodic}:
+	 	\begin{itemize}
+	 		\item Episodic decision making: Output is a single action
+	 		\item Sequential decision making: Output is a sequence of actions or policy
+	 			\begin{itemize}
+	 				\item Finite horizon: implies that decisions need to be made for a finite number of time steps
+	 				\item Infinite horizon: problems last forever.
+	 			\end{itemize}	
+	 	\end{itemize}
+	 
+ 		\paragraph{Categorization} depends on the decision making algorithm’s instigator
+	 		\begin{itemize}
+	 			\item reactive: react to environmental changes
+	 			\item deliberative: initiate actions without external triggers
+	 			\item hybrid:  can react to the environment or initiate actions based on their planning algorithm.
+ 			\end{itemize}
+ 		
+ 		\paragraph{Evaluation} \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}
+ 			\begin{itemize}
+ 				\item policy optimality: A policy is optimal if it has the highest utility
+ 				
+ 				\item search completeness: A search algorithm is complete if it guarantees to return an optimal policy
+ 				in finite time, when it exists.
+ 				
+ 				\item time complexity: Time complexity quantifies the amount of time needed to search for a solution 
+ 				
+ 				\item space complexity: quantifies the amount of computational memory
+ 				needed.
+ 			\end{itemize}
+ 		\subsubsection{Reinforcement Learning} RL allows agents to learn a policy by rewarding “good” behavior and punishing “bad” behavior through a reward signal.
+
+	\bibliography{/home/donkarlo/Dropbox/projs/research/refs}
+\end{document}

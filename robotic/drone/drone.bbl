@@ -1,0 +1,121 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Baydoun} et~al.(2019){Baydoun}, {Campo}, {Kanapram}, {Marcenaro}, and
+  {Regazzoni}]{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}
+M.~{Baydoun}, D.~{Campo}, D.~{Kanapram}, L.~{Marcenaro}, and C.~S. {Regazzoni}.
+\newblock Prediction of multi-target dynamics using discrete descriptors: an
+  interactive approach.
+\newblock 2019.
+
+\bibitem[{Bloesch} et~al.(2015){Bloesch}, {Omari}, {Hutter}, and
+  {Siegwart}]{bloesch-2015-robust-visual-inertial-odometry-using-a-direct-ekf-based-approach}
+M.~{Bloesch}, S.~{Omari}, M.~{Hutter}, and R.~{Siegwart}.
+\newblock Robust visual inertial odometry using a direct ekf-based approach.
+\newblock In \emph{2015 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}, pages 298--304, 2015.
+
+\bibitem[Kamel et~al.(2016)Kamel, Burri, and
+  Siegwart]{kamel-2016-linear-vs-nonlinear-mpc-for-trajectory-tracking-applied-to-rotary-wing-micro-aerial-vehicles}
+Mina Kamel, Michael Burri, and Roland Siegwart.
+\newblock Linear vs nonlinear {MPC} for trajectory tracking applied to rotary
+  wing micro aerial vehicles.
+\newblock 2016.
+
+\bibitem[Kamel et~al.(2017)Kamel, Stastny, Alexis, and
+  Siegwart]{kamel-2017-model-predictive-control-for-trajectory-tracking-of-unmanned-aerial-vehicles-using-robot-operating-system}
+Mina~Samir Kamel, Thomas Stastny, Kostas Alexis, and Roland Siegwart.
+\newblock \emph{Model Predictive Control for Trajectory Tracking of Unmanned
+  Aerial Vehicles Using Robot Operating System}.
+\newblock 05 2017.
+\newblock \doi{10.1007/978-3-319-54927-9_1}.
+
+\bibitem[{Kavraki} et~al.(1996){Kavraki}, {Svestka}, {Latombe}, and
+  {Overmars}]{kavraki-1996-probabilistic-roadmaps-for-path-planning-in-high-dimensional-configuration-spaces}
+L.~E. {Kavraki}, P.~{Svestka}, J.~. {Latombe}, and M.~H. {Overmars}.
+\newblock Probabilistic roadmaps for path planning in high-dimensional
+  configuration spaces.
+\newblock \emph{IEEE Transactions on Robotics and Automation}, 12\penalty0
+  (4):\penalty0 566--580, 1996.
+
+\bibitem[LaValle(1998)]{lavalle-1998-rapidly-exploring-random-trees-a-new-tool-for-path-planning}
+S.~LaValle.
+\newblock Rapidly-exploring random trees : a new tool for path planning.
+\newblock 1998.
+
+\bibitem[{Loianno} et~al.(2017){Loianno}, {Brunner}, {McGrath}, and
+  {Kumar}]{loianno-2017-estimation-control-and-planning-for-aggressive-flight-with-a-small-quadrotor-with-a-single-camera-and-imu}
+G.~{Loianno}, C.~{Brunner}, G.~{McGrath}, and V.~{Kumar}.
+\newblock Estimation, control, and planning for aggressive flight with a small
+  quadrotor with a single camera and imu.
+\newblock \emph{IEEE Robotics and Automation Letters}, pages 404--411, 2017.
+
+\bibitem[Masehian and
+  Katebi(2007)]{masehian-2007-robot-motion-planning-in-dynamic-environments-with-moving-obstacles-and-target}
+E.~Masehian and Yalda Katebi.
+\newblock Robot motion planning in dynamic environments with moving obstacles
+  and target.
+\newblock \emph{World Academy of Science, Engineering and Technology,
+  International Journal of Computer, Electrical, Automation, Control and
+  Information Engineering}, 1:\penalty0 1249--1254, 2007.
+
+\bibitem[Mohanan and
+  Salgoankar(2018)]{mohanan-2018-a-survey-of-robotic-motion-planning-in-dynamic-environments}
+M.~G. Mohanan and Ambuja Salgoankar.
+\newblock A survey of robotic motion planning in dynamic environments.
+\newblock \emph{Robotics Auton. Syst.}, 100:\penalty0 171--185, 2018.
+
+\bibitem[Nascimento and
+  Saska(2019)]{nascimento-2019-position-and-attitude-control-of-multi-rotor-aerial-vehicles-a-survey}
+Tiago Nascimento and Martin Saska.
+\newblock Position and attitude control of multi-rotor aerial vehicles: A
+  survey.
+\newblock 2019.
+
+\bibitem[{Nikolic} et~al.(2014){Nikolic}, {Rehder}, {Burri}, {Gohl},
+  {Leutenegger}, {Furgale}, and
+  {Siegwart}]{nikolic-2014-a-synchronized-visual-inertial-sensor-system-with-fpga-pre-processing-for-accurate-real-time-slam}
+J.~{Nikolic}, J.~{Rehder}, M.~{Burri}, P.~{Gohl}, S.~{Leutenegger}, P.~T.
+  {Furgale}, and R.~{Siegwart}.
+\newblock A synchronized visual-inertial sensor system with fpga pre-processing
+  for accurate real-time slam.
+\newblock pages 431--437, 2014.
+
+\bibitem[Powers et~al.(2015)Powers, Mellinger, and
+  Kumar]{powers-2015-quadrotor-kinematics-and-dynamics}
+Caitlin Powers, Daniel Mellinger, and Vijay Kumar.
+\newblock \emph{Quadrotor Kinematics and Dynamics}.
+\newblock 2015.
+
+\bibitem[{Spurny} et~al.(2019){Spurny}, {Petrlik}, {Vonasek}, and
+  {Saska}]{spurny-2019-cooperative-transport-of-large-objects-by-a-pair-of-unmanned-aerial-systems-using-sampling-based-motion-planning}
+V.~{Spurny}, M.~{Petrlik}, V.~{Vonasek}, and M.~{Saska}.
+\newblock Cooperative transport of large objects by a pair of unmanned aerial
+  systems using sampling-based motion planning.
+\newblock In \emph{2019 24th IEEE International Conference on Emerging
+  Technologies and Factory Automation (ETFA)}, pages 955--962, 2019.
+
+\bibitem[Tagliabue et~al.(2017)Tagliabue, Kamel, Siegwart, and
+  Nieto]{tagliabue-2017-robust-collaborative-object-transportation-using-multiple-mavs}
+Andrea Tagliabue, Mina Kamel, Roland Siegwart, and Juan~I. Nieto.
+\newblock Robust collaborative object transportation using multiple mavs.
+\newblock 2017.
+
+\bibitem[Vonasek et~al.(2009)Vonasek, Faigl, Krajník, and
+  Přeučil]{vonasek-2009-rrt-path-a-guided-rapidly-exploring-random-tree}
+Vojtech Vonasek, Jan Faigl, Tomáš Krajník, and Libor Přeučil.
+\newblock \emph{RRT-path – A Guided Rapidly Exploring Random Tree}.
+\newblock 2009.
+
+\bibitem[Wang et~al.(2015)Wang, Lyu, Yao, Liang, and
+  Liu]{wang-2015-three-dimensional-path-planning-for-unmanned-aerial-vehicle-based-on-interfered-fluid-dynamical-system}
+Honglun Wang, Wentao Lyu, Peng Yao, Xiao Liang, and Chang Liu.
+\newblock Three-dimensional path planning for unmanned aerial vehicle based on
+  interfered fluid dynamical system.
+\newblock 2015.
+
+\end{thebibliography}

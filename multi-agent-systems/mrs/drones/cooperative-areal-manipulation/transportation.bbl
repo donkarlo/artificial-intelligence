@@ -1,0 +1,296 @@
+\begin{thebibliography}{40}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alonso-Mora et~al.(2017)Alonso-Mora, Baker, and
+  Rus]{mora-2017-multi-robot-formation-control-and-object-transport-in-dynamic-environments-via-constrained-optimization}
+Javier Alonso-Mora, Stuart Baker, and Daniela Rus.
+\newblock Multi-robot formation control and object transport in dynamic
+  environments via constrained optimization.
+\newblock \emph{The International Journal of Robotics Research}, 36\penalty0
+  (9):\penalty0 1000--1021, 2017.
+
+\bibitem[{Bandala} et~al.(2018){Bandala}, {Chua}, {Dajay}, {Rabacca}, {So},
+  {Martin Z. Maningo}, {Fernando}, and {Rhay P.
+  Vicerra}]{bandala-2018-payload-lift-and-transport-using-decentralized-unmanned-aerial-vehicle-quadcopter-teams}
+A.~A. {Bandala}, A.~G. {Chua}, R.~R. {Dajay}, R.~D. {Rabacca}, E.~C. {So},
+  J.~{Martin Z. Maningo}, A.~H. {Fernando}, and R.~{Rhay P. Vicerra}.
+\newblock Payload lift and transport using decentralized unmanned aerial
+  vehicle quadcopter teams.
+\newblock 2018.
+
+\bibitem[{Chen} and
+  {Shan}(2019)]{chen-2019-cooperative-transportation-of-cable-suspended-slender-payload-using-two-quadrotors}
+T.~{Chen} and J.~{Shan}.
+\newblock Cooperative transportation of cable-suspended slender payload using
+  two quadrotors.
+\newblock 2019.
+
+\bibitem[Chung et~al.(2018)Chung, Paranjape, Dames, Shen, and
+  Kumar]{chung-2018-a-survey-on-aerial-swarm-robotics}
+Soon{-}Jo Chung, Aditya~A. Paranjape, Philip~M. Dames, Shaojie Shen, and Vijay
+  Kumar.
+\newblock A survey on aerial swarm robotics.
+\newblock 2018.
+
+\bibitem[Coppola et~al.(2020)Coppola, McGuire, Wagter, and
+  de~Croon]{coppola-2020-a-survey-on-swarming-with-micro-air-vehicles-fundamental-challenges-and-constraints}
+Mario Coppola, Kimberly~N. McGuire, Christophe~De Wagter, and Guido C. H.~E.
+  de~Croon.
+\newblock A survey on swarming with micro air vehicles: Fundamental challenges
+  and constraints.
+\newblock 2020.
+
+\bibitem[Erskine et~al.(2019)Erskine, Chriette, and
+  Caro]{erskine-2019-wrench-analysis-of-cable-suspended-parallel-robots-actuated-by-quadrotor-unmanned-aerial-vehicles}
+Julian Erskine, Abdelhamid Chriette, and Stéphane Caro.
+\newblock Wrench analysis of cable-suspended parallel robots actuated by
+  quadrotor unmanned aerial vehicles.
+\newblock 2019.
+
+\bibitem[Garcia~de Marina and
+  Smeur(2019)]{marina-2019-flexible-collaborative-transportation-by-a-team-of-rotorcraft}
+Hector Garcia~de Marina and Ewoud Smeur.
+\newblock Flexible collaborative transportation by a team of rotorcraft, 2019.
+
+\bibitem[{Gassner} et~al.(2017){Gassner}, {Cieslewski}, and
+  {Scaramuzza}]{gassner-2017-dynamic-collaboration-without-communication-vision-based-cable-suspended-load-transport-with-two-quadrotors}
+M.~{Gassner}, T.~{Cieslewski}, and D.~{Scaramuzza}.
+\newblock Dynamic collaboration without communication: Vision-based
+  cable-suspended load transport with two quadrotors.
+\newblock In \emph{2017 IEEE International Conference on Robotics and
+  Automation (ICRA)}, pages 5196--5202, 2017.
+
+\bibitem[Gelblum et~al.(2015)Gelblum, Pinkoviezky, Fonio,
+  et~al.]{gelblum-2017-ant-groups-optimally-amplify-the-effect-of-transiently-informed-individuals}
+A~Gelblum, I~Pinkoviezky, E~Fonio, et~al.
+\newblock Ant groups optimally amplify the effect of transiently informed
+  individuals. nat commun 6: 1--9.
+\newblock 2015.
+
+\bibitem[Guerrero et~al.(2015)Guerrero, Mercado-Ravell, Lozano, and
+  Garcia-Beltrán]{guerrero-2015-passivity-based-control-for-a-quadrotor-uav-transporting-a-cable-suspended-payload-with-minimum-swing}
+M.~Guerrero, Diego Mercado-Ravell, R.~Lozano, and Carlos Garcia-Beltrán.
+\newblock Passivity based control for a quadrotor uav transporting a
+  cable-suspended payload with minimum swing.
+\newblock 2015.
+
+\bibitem[{Jackson} et~al.(2020){Jackson}, {Howell}, {Shah}, {Schwager}, and
+  {Manchester}]{jackson-2020-scalable-cooperative-transport-of-cable-suspended-loads-with-uavs-using-distributed-trajectory-optimization}
+B.~E. {Jackson}, T.~A. {Howell}, K.~{Shah}, M.~{Schwager}, and Z.~{Manchester}.
+\newblock Scalable cooperative transport of cable-suspended loads with uavs
+  using distributed trajectory optimization.
+\newblock \emph{IEEE Robotics and Automation Letters}, 5\penalty0 (2):\penalty0
+  3368--3374, 2020.
+
+\bibitem[{Jiang} and
+  {Kumar}(2013)]{jiang-2013-the-inverse-kinematics-of-cooperative-transport-with-multiple-aerial-robots}
+Q.~{Jiang} and V.~{Kumar}.
+\newblock The inverse kinematics of cooperative transport with multiple aerial
+  robots.
+\newblock \emph{IEEE Transactions on Robotics}, 29\penalty0 (1):\penalty0
+  136--145, 2013.
+
+\bibitem[{Kavraki} et~al.(1996){Kavraki}, {Svestka}, {Latombe}, and
+  {Overmars}]{kavraki-1996-probabilistic-roadmaps-for-path-planning-in-high-dimensional-configuration-spaces}
+L.~E. {Kavraki}, P.~{Svestka}, J.~. {Latombe}, and M.~H. {Overmars}.
+\newblock Probabilistic roadmaps for path planning in high-dimensional
+  configuration spaces.
+\newblock \emph{IEEE Transactions on Robotics and Automation}, 12\penalty0
+  (4):\penalty0 566--580, 1996.
+
+\bibitem[LaValle(1998)]{lavalle-1998-rapidly-exploring-random-trees-a-new-tool-for-path-planning}
+S.~LaValle.
+\newblock Rapidly-exploring random trees : a new tool for path planning.
+\newblock 1998.
+
+\bibitem[{Lee} et~al.(2018){Lee}, {Kim}, {Kim}, and
+  {Kim}]{lee-2018-an-integrated-framework-for-cooperative-aerial-manipulators-in-unknown-environments}
+H.~{Lee}, H.~{Kim}, W.~{Kim}, and H.~J. {Kim}.
+\newblock An integrated framework for cooperative aerial manipulators in
+  unknown environments.
+\newblock \emph{IEEE Robotics and Automation Letters}, 2018.
+
+\bibitem[Loianno and
+  Kumar(2018)]{loianno-2017-cooperative-transportation-using-small-quadrotors-using-monocular-vision-and-inertial-sensing}
+Giuseppe Loianno and Vijay Kumar.
+\newblock Cooperative transportation using small quadrotors using monocular
+  vision and inertial sensing.
+\newblock \emph{{IEEE} Robotics Autom. Lett.}, 3\penalty0 (2):\penalty0
+  680--687, 2018.
+
+\bibitem[Masone et~al.(2016)Masone, B{\"u}lthoff, and
+  Stegagno]{masone-2016-cooperative-transportation-of-a-payload-using-quadrotors-a-reconfigurable-cable-driven-parallel-robot}
+Carlo Masone, Heinrich~H. B{\"u}lthoff, and Paolo Stegagno.
+\newblock Cooperative transportation of a payload using quadrotors: A
+  reconfigurable cable-driven parallel robot.
+\newblock \emph{2016 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}, pages 1623--1630, 2016.
+
+\bibitem[{Medina} et~al.(2020){Medina}, {Hacohen}, and
+  {Shvalb}]{medina-2018-robotic-swarm-motion-planning-for-load-carrying-and-manipulating}
+O.~{Medina}, S.~{Hacohen}, and N.~{Shvalb}.
+\newblock Robotic swarm motion planning for load carrying and manipulating.
+\newblock \emph{IEEE Access}, 8:\penalty0 53141--53150, 2020.
+
+\bibitem[Mellinger et~al.(2010)Mellinger, Shomin, Michael, and
+  Kumar]{mellinger-2010-cooperative-grasping-and-transport-using-multiple-quadrotors}
+Daniel Mellinger, Michael Shomin, Nathan Michael, and Vijay Kumar.
+\newblock Cooperative grasping and transport using multiple quadrotors.
+\newblock In \emph{DARS}, 2010.
+
+\bibitem[Michael et~al.(2009)Michael, Fink, and
+  Kumar]{michael-2009-cooperative-manipulation-and-transportation-with-aerial-robots}
+Nathan Michael, Jonathan Fink, and Vijay Kumar.
+\newblock Cooperative manipulation and transportation with aerial robots.
+\newblock 2009.
+
+\bibitem[{Mohammadi} et~al.(2018){Mohammadi}, {Jafarinasab}, {Sirouspour}, and
+  {Dyer}]{mohammadi-2018-decentralized-motion-control-in-a-cabled-based-multi-drone-load-transport-system}
+K.~{Mohammadi}, M.~{Jafarinasab}, S.~{Sirouspour}, and E.~{Dyer}.
+\newblock Decentralized motion control in a cabled-based multi-drone load
+  transport system.
+\newblock In \emph{2018 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}, pages 4198--4203, 2018.
+
+\bibitem[Mohammadi et~al.(2020)Mohammadi, Sirouspour, and
+  Grivani]{mohammadi-2020-control-of-multiple-quad-copters-with-a-cable-suspended-payload-subject-to-disturbances}
+Keyvan Mohammadi, Shahin Sirouspour, and Ali Grivani.
+\newblock Control of multiple quad-copters with a cable-suspended payload
+  subject to disturbances.
+\newblock 2020.
+
+\bibitem[Mohiuddin et~al.(2020{\natexlab{a}})Mohiuddin, Taha, Zweiri, and
+  Gan]{mohiuddin-2020-a-survey-of-single-and-multi-uav-aerial-manipulation}
+Abdullah Mohiuddin, Tarek Taha, Yahya Zweiri, and Dongming Gan.
+\newblock A survey of single and multi-uav aerial manipulation.
+\newblock pages 1--26, 02 2020{\natexlab{a}}.
+\newblock \doi{10.1142/S2301385020500089}.
+
+\bibitem[Mohiuddin et~al.(2020{\natexlab{b}})Mohiuddin, Zweiri, Taha, and
+  Gan]{mohiuddin-2020-energy-distribution-in-dual-uav-collaborative-transportation-through-load-sharing}
+Abdullah Mohiuddin, Yahya Zweiri, Tarek Taha, and Dongming Gan.
+\newblock Energy distribution in dual-uav collaborative transportation through
+  load sharing.
+\newblock \emph{Journal of Mechanisms and Robotics}, 04 2020{\natexlab{b}}.
+\newblock \doi{10.1115/1.4046912}.
+
+\bibitem[Nguyen et~al.(2015)Nguyen, Park, and
+  Lee]{nguyen-2015-aerial-tool-operation-system-using-quadrotors-as-rotating-thrust-generators}
+Hai{-}Nguyen Nguyen, Sangyul Park, and Dongjun Lee.
+\newblock Aerial tool operation system using quadrotors as rotating thrust
+  generators.
+\newblock 2015.
+
+\bibitem[{Ollero} et~al.(2018){Ollero}, {Heredia}, {Franchi}, {Antonelli},
+  {Kondak}, {Sanfeliu}, {Viguria}, {Martinez-de Dios}, {Pierri}, {Cortes},
+  {Santamaria-Navarro}, {Trujillo Soto}, {Balachandran}, {Andrade-Cetto}, and
+  {Rodriguez}]{ollero-2018-the-aeroarms-project-aerial-robots-with-advanced-manipulation-capabilities-for-inspection-and-maintenance}
+A.~{Ollero}, G.~{Heredia}, A.~{Franchi}, G.~{Antonelli}, K.~{Kondak},
+  A.~{Sanfeliu}, A.~{Viguria}, J.~R. {Martinez-de Dios}, F.~{Pierri},
+  J.~{Cortes}, A.~{Santamaria-Navarro}, M.~A. {Trujillo Soto},
+  R.~{Balachandran}, J.~{Andrade-Cetto}, and A.~{Rodriguez}.
+\newblock The aeroarms project: Aerial robots with advanced manipulation
+  capabilities for inspection and maintenance.
+\newblock 2018.
+
+\bibitem[Rezaee and
+  Abdollahi(2017)]{rezaee-2017-almost-sure-attitude-consensus-in-multispacecraft-systems-with-stochastic-communication-links}
+Hamed Rezaee and Farzaneh Abdollahi.
+\newblock Almost sure attitude consensus in multispacecraft systems with
+  stochastic communication links.
+\newblock 2017.
+
+\bibitem[Ruggiero et~al.(2018)Ruggiero, Lippiello, and
+  Ollero]{ruggiero-2018-introduction-to-the-special-issue-on-aerial-manipulation}
+Fabio Ruggiero, Vincenzo Lippiello, and Anibal Ollero.
+\newblock Introduction to the special issue on aerial manipulation.
+\newblock 2018.
+
+\bibitem[Soria et~al.(2020)Soria, Schiano, and
+  Floreano]{soria-2020-swarmlab-a-matlab-drone-swarm-simulator}
+Enrica Soria, Fabrizio Schiano, and Dario Floreano.
+\newblock Swarmlab: a matlab drone swarm simulator.
+\newblock \emph{arXiv preprint arXiv:2005.02769}, 2020.
+
+\bibitem[{Spurny} et~al.(2019){Spurny}, {Petrlik}, {Vonasek}, and
+  {Saska}]{spurny-2019-cooperative-transport-of-large-objects-by-a-pair-of-unmanned-aerial-systems-using-sampling-based-motion-planning}
+V.~{Spurny}, M.~{Petrlik}, V.~{Vonasek}, and M.~{Saska}.
+\newblock Cooperative transport of large objects by a pair of unmanned aerial
+  systems using sampling-based motion planning.
+\newblock In \emph{2019 24th IEEE International Conference on Emerging
+  Technologies and Factory Automation (ETFA)}, pages 955--962, 2019.
+
+\bibitem[Sreenath and
+  Kumar(2013)]{sreenath-2013-dynamics-control-and-planning-for-cooperative-manipulation-of-payloads-suspended-by-cables-from-multiple-quadrotor-robots}
+Koushil Sreenath and Vijay Kumar.
+\newblock Dynamics, control and planning for cooperative manipulation of
+  payloads suspended by cables from multiple quadrotor robots.
+\newblock In \emph{Robotics: Science and Systems}, 2013.
+
+\bibitem[{Tagliabue} et~al.(2017){Tagliabue}, {Kamel}, {Verling}, {Siegwart},
+  and
+  {Nieto}]{tagliabue-2017-collaborative-transportation-using-mavs-via-passive-force-control}
+A.~{Tagliabue}, M.~{Kamel}, S.~{Verling}, R.~{Siegwart}, and J.~{Nieto}.
+\newblock Collaborative transportation using mavs via passive force control.
+\newblock In \emph{2017 IEEE International Conference on Robotics and
+  Automation (ICRA)}, pages 5766--5773, 2017.
+
+\bibitem[Tagliabue et~al.(2017)Tagliabue, Kamel, Siegwart, and
+  Nieto]{tagliabue-2017-robust-collaborative-object-transportation-using-multiple-mavs}
+Andrea Tagliabue, Mina Kamel, Roland Siegwart, and Juan~I. Nieto.
+\newblock Robust collaborative object transportation using multiple mavs.
+\newblock 2017.
+
+\bibitem[{Thapa} et~al.(2019){Thapa}, {Bail}, and
+  {Acosta}]{thapa-2019-cooperative-aerial-load-transport-with-attitude-stabilization}
+S.~{Thapa}, H.~{Bail}, and J.~Á. {Acosta}.
+\newblock Cooperative aerial load transport with attitude stabilization.
+\newblock In \emph{2019 American Control Conference (ACC)}, pages 2245--2250,
+  2019.
+
+\bibitem[Tuci et~al.(2018)Tuci, Alkilabi, and
+  Akanyeti]{tuci-2018-cooperative-object-transport-in-multi-robot-systems-a-review-of-the-state-of-the-art}
+Elio Tuci, Muhanad H.~Mohammed Alkilabi, and Otar Akanyeti.
+\newblock Cooperative object transport in multi-robot systems: A review of the
+  state-of-the-art.
+\newblock \emph{Frontiers Robotics AI}, 2018.
+
+\bibitem[Vasarhelyi et~al.(2014)Vasarhelyi, Viragh, Somorjai, Tarcai, Szorenyi,
+  Nepusz, and
+  Vicsek]{vasarhelyi-2014-outdoor-flocking-and-formation-flight-with-autonomous-aerial-robots}
+Gabor Vasarhelyi, Csaba Viragh, Gergo Somorjai, Norbert Tarcai, Tamas Szorenyi,
+  Tamas Nepusz, and Tamas Vicsek.
+\newblock Outdoor flocking and formation flight with autonomous aerial robots.
+\newblock 02 2014.
+
+\bibitem[Villa et~al.(2019)Villa, Brandao, and
+  Sarcinelli-Filho]{villa-2019-a-survey-on-load-transportation-using-multirotor-uavs}
+Daniel Villa, A.s Brandao, and Mário Sarcinelli-Filho.
+\newblock A survey on load transportation using multirotor uavs.
+\newblock pages 1--30, 2019.
+
+\bibitem[{Wu} et~al.(2020){Wu}, {Hung}, {Yang}, and
+  {Cheng}]{wu-2020-cooperative-transportation-of-drones-without-inter-agent-communication}
+P.~{Wu}, H.~{Hung}, C.~{Yang}, and T.~{Cheng}.
+\newblock Cooperative transportation of drones without inter-agent
+  communication.
+\newblock 2020.
+
+\bibitem[Xie et~al.(2020)Xie, Cai, and
+  Chirarattananon]{xie-2020-towards-cooperative-transport-of-a-suspended-payload-via-two-aerial-robots-with-inertial-sensing}
+Heng Xie, Xinyu Cai, and Pakpong Chirarattananon.
+\newblock Towards cooperative transport of a suspended payload via two aerial
+  robots with inertial sensing, 2020.
+
+\bibitem[Yu et~al.(2010)Yu, Werfel, and
+  Nagpal]{han-2010-collective-decision-making-in-multi-agent-systems-by-implicit-leadership}
+Chih{-}Han Yu, Justin Werfel, and Radhika Nagpal.
+\newblock Collective decision-making in multi-agent systems by implicit
+  leadership.
+\newblock pages 1189--1196, 2010.
+
+\end{thebibliography}

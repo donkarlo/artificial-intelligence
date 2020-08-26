@@ -1,0 +1,465 @@
+\documentclass{article}
+\usepackage{comment}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\DeclareMathOperator*{\argmax}{argmax}
+\pagenumbering{arabic}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Mohammad Rahmani}
+\lhead{Multi-agent systems}
+
+\newcommand{\ignore}[1]{}
+\begin{document}
+	\bibliographystyle{plainnat}
+	\title{Multi-agent systems}
+	\author{Mohammad Rahmani}
+	\date{}
+	\maketitle
+	MAS are composed of \underline{multiple autonomous}, \textbf{interacting} \textbf{agents} that have \textbf{common} or \textbf{conflicting} \textbf{goals} and \textbf{sensory information}. MAS are generally \textbf{decentralized}(decision making), \textbf{asynchronous} systems but can sometimes be \textbf{centralized or hybrid} \citep{shoham-2009-multiagent-systems-algorithmic-game-theoretic-and-logical-foundations}.
+	Agents \textbf{communicate} with each other, and \textbf{make decisions} on their own in order to achieve their individual as well as collective goals. To this end they are equipped with a ‘brain’\citep{ciprich-2008-the-architecture-of-an-intelligent-agent-in-mas}.
+	\section{Open MAS}
+		In open multi-agent systems (MASs), agents are independently designed and act according to their own interests. Norms can be applied to regulate such systems influencing and restricting the behavior of their agents but not directly interfering with their autonomy \citep{santos-2018-detection-and-resolution-of-normative-conflicts-in-multi-agent-systems-a-literature-survey}.
+	
+	\section{Interaction}
+		\paragraph{Complexity}
+			Considering agent interaction complexity leads to three classes of MAS: 
+			\cite{ngobye-2010-types-and-priorities-of-multi-agent-system-interactions}
+			based on :
+		\paragraph{Types}
+			\begin{itemize}
+				\item no direct interaction
+				\item simple interaction
+				\item complex conditional interaction
+			\end{itemize}
+			In addition to the complexity of interactions, MAS can exhibit different types of interactions based on agent (\cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[43], [44])
+			\begin{itemize}
+				\item goals
+				\item resources
+				\item skills
+			\end{itemize}
+		\begin{itemize}
+			\item Positive: Help each other accomplish their goals
+				\begin{itemize}
+					\item \textbf{collective}: Agents are \underline{unaware} of other agents’ existence but share a \underline{common goal} and each agent contributes to its completion, as in \underline{robot formation control} and \underline{foraging}.  
+					
+					\item \textbf{collaborative}: In collaborative interaction, agents \underline{do not have common goals} but help each other accomplish their individual goals.
+					
+					\item \textbf{Cooperative}: Cooperative interaction is similar to collective interaction except that agents are \underline{aware} of other agents’ existence. Examples include search and rescue, exploration, and object displacement. It is considered by some one of the more challenging interactions due to the need for \underline{high correlation} and \underline{synchronization} between agents and time sensitivity of agents’ actions, especially in robotics  \citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}
+					
+					\item \textbf{Coordinative}: Agents within an environment work together to \textbf{minimize interference} and complete their individual goals; MRS(Multi Robotic Systems) path planning is one example.
+				\end{itemize}
+			\item \textbf{Negative}: Agents impede each other. Negative interaction can be either
+				\begin{itemize}
+					\item \textbf{conflicting} where agents do not have enough resources to complete their goals and fight for external resources.
+					
+					\item \textbf{competitive} where agents have conflicting goals.
+				\end{itemize}
+		\end{itemize}
+		
+		\subsection{Communication}
+			The communication section of \citet{yan-2013-a-survey-and-analysis-of-multi-robot-coordination} offers a taxonomy of existing communication types. Communication is a mode of interaction between agents \citep{yan-2013-a-survey-and-analysis-of-multi-robot-coordination}.
+			\citet{arai-2002-guest-editorial-advances-in-multirobot-systems} the communication section, survey.
+			\paragraph{Communication types}
+			\begin{itemize}
+				\item \textbf{Explicit}: Explicit communication refers to the means for the direct exchange of information between the robots, which can be made in the form of \textbf{unicast} or \textbf{broadcast} intentional messages \cite{yan-2013-a-survey-and-analysis-of-multi-robot-coordination}.
+				
+				\item \textbf{Implicit}: Implicit communication refers to the way in which the
+				robot gets information about other robots in the system through the  environment.Implicit communication can also be divided into two 			categories: active implicit communication (e.g., interaction via the environment) and passive implicit communication (e.g., interaction via sensing) \cite{yan-2013-a-survey-and-analysis-of-multi-robot-coordination}
+			\end{itemize}
+			Another communication Type
+			\begin{itemize}
+				\item Direct
+				\item Indirect
+			\end{itemize}
+			Another
+			\begin{itemize}
+				\item Spars
+			\end{itemize}
+			Another
+			\begin{itemize}
+				\item Local
+			\end{itemize}
+			Another
+			\begin{itemize}
+				\item Communication Free systems
+			\end{itemize}
+			
+			\paragraph{Agent-communication language} \url{https://en.wikipedia.org/wiki/Agent_Communications_Language}
+			\paragraph{Communication channel}
+			\begin{itemize}
+				\item Discreet
+			\end{itemize}	
+			\paragraph{From centralization point of view}
+			\begin{itemize}
+				\item Centralized
+				\item Decentralized
+			\end{itemize}
+			
+			\subsubsection{Natural language}
+				\paragraph{Human NL to action:}
+				As the first stage in Section \ref{sec:methodology} is reception of requests in NL so that the machine can form word embedding, then in this part some related works are presented. \cite{doubleday-2016-processing-natural-language-about-ongoing-actions} describes extensions to Language Communication with Autonomous Systems (LCAS) implementation for the control of autonomous systems by NL, to enable such systems to handle incoming language requests regarding actions. \cite{chai-2018-language-to-action-towards-interactive-task-learning-with-physical-agents} gives a brief introduction to interactive task learning where humans can teach physical agents new tasks through NL communication and action demonstration.
+				
+				\paragraph{Human verbal interaction with an IA:} Although the main subject of this idea is IA-IA interaction but verbal human interaction can also provide us with a lot of applicable information. A survey over such verbal and none verbal methods is presented in \cite{mavridis-2015-a-review-of-verbal-and-non-verbal-human-robot-interactive-communication}.
+		
+	
+	\section{Task allocation}
+	
+	\section{Task decomposition}
+	
+	\section{Coordination}
+			Is a probable result of some interaction. I believe coordination might be a result of interaction.
+		
+	\section{Self-organization} 
+	
+	\section{Conflict resolution}
+		\paragraph{Surveys}\cite{santos-2018-detection-and-resolution-of-normative-conflicts-in-multi-agent-systems-a-literature-survey} presented a literature review on normative conflict resolution in Open MAS. \citet{alshabi-2007-coordination-cooperation-and-conflict-resolution-in-multi-agent-systems} presents another survey with this regard. 
+		\paragraph{Individuals} \cite{ferrera-2014-multi-robot-operation-system-with-conflict-resolution} presents an scalable, decentralized and reactive approach for collision avoidance is presented. 
+		\cite{jiang-2019-multi-robot-planning-with-conflicts-and-synergies} formulate the problem of multi-robot planning with conflicts and synergies (mrpcs), and develop a multi-robot planning framework, called iterative inter-dependent planning (iidp), for representing and solving mrpcs problems.
+		\cite{kutzke-2019-conflict-resolution-for-heterogeneous-teams-in-communication-limited-environments-a-generous-agent-approach} presents a schedule deconfliction algorithm to enhance cooperation among heterogeneous teams of autonomous agents in situations where communication is severely limited. The proposed solution, which they call the Generous Agent Algorithm (GAA), encodes human-like negotiations during conflict resolution. Individual agents propose modified schedules, vacating their most costly task from their schedules, while  simultaneously augmenting their schedules with another agent's vacated task.  
+	\section{Swarm intelligence} 
+	Swarm intelligence describes the behavior of \textbf{decentralized cooperative agents}, whether natural or artificial, working toward a common global goal. \textbf{Self-organized and distributed behavior of locally aware and locally interacting	agents are pillars of swarm intelligence}. Systems modeled in this fashion generally consist of many autonomous but \underline{homogeneous} agents \underline{implementing simple rules} with agent \underline{interactions restricted to local neighborhoods}.
+	
+	\section{Decision making/ Planning} 
+		MAS planning and control, also known as decision making, is a main module in MAS. It determines the \textbf{sequence of actions}, or \textbf{policy}, that agents should perform to complete their assigned task once the complex tasks have been decomposed to sub-tasks and allocated to cooperating groups of agents. \cite{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}
+	
+		\paragraph{Pros and cons of each strategy is presented in Figure \ref{fig:decision-making-pros-and-cons}}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.6\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey-table-3.jpg}
+			\caption{}
+			\label{fig:decision-making-pros-and-cons}
+		\end{figure}
+		\paragraph{communication vs heterogeneity is presented in Figure \ref{fig:communication-vs-heterogeneity}}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.6\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/rizk-2018-decision-making-in-multiagent-systems-a-survey-figure-1.jpg}
+			\caption{}
+			\label{fig:communication-vs-heterogeneity}
+		\end{figure}
+	
+		\paragraph{Centrality}: Learning policies in MAS decision making:
+			\begin{itemize}
+				\item Centralized: learns policies for all agents in the system
+				\item Decentralized: each agent learns its own policies in parallel to other agents
+			\end{itemize}
+	
+		\paragraph{Evaluation} see artificial intelligence decision making and also this one in challenges
+		
+		\paragraph{Credit assignment and Communication factor}	
+			\begin{itemize}
+				\item Credit assignment: How to distribute rewards among cooperating agents, is one problem that arises and should be appropriately handled to achieve optimal performance.
+				\item Communication, whether direct or indirect, is another issue in cooperative decision making that should be considered
+			\end{itemize}
+		
+		
+		\subsection{Reinforcement learning RL} 
+		Multi-agent RL allows cooperative MAS to complete tasks with minimal communication overhead by using the global immediate reward instead of the individual agent immediate reward in the Q-learning algorithm to solve repeated games \cite{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[234]. RL is used in Game theory and Markov Decision Process(MDP), mostly as a solution to the problems. 
+		
+		\subsection{Markov Decision Process(MDP)}
+			\subsubsection{M-MDP} Multiagent  MDP (M-MDP) extends MDP to MAS by assuming a \textbf{joint action space} with a \textbf{team reward model} and \textbf{fully observable environment}. A central learner learns a vector of actions that should be performed by the agents and the reward is common to all agents \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[37].
+			\\
+			The worst-case complexity of finite horizon M-MDP is \textbf{P-complete} \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[68] which is solvable in \textbf{polynomial time} by a \textbf{Turing machine}, an abstract model of computing devices. As the number of agents increases, the joint state and action spaces’ dimensionalities increase exponentially. 
+			\\
+			To ease the computational burden, independence is assumed to make objective functions factorable. 
+			\\
+			Solving the problem iteratively also reduces the computational complexity. 
+			\\
+			Distributed implementations of the central learner have been developed for factorable objective functions \citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}->[69]. 
+			\subsubsection{DEC-MDP} 
+			Decentralized MDP (dec-MDP) assumes an independent action space with local reward and jointly fully observable environments \citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}[37]. In other words, individual agents view a partially observable environment but the aggregate observations of all agents in the MAS make the environment fully observable. 
+				\paragraph{Finite-Horizon DEC-MDP} was proven to be worst
+				case NEXP-complete (solvable in exponential time using a
+				nondeterministic Turning machine), when three or more agents
+				are considered \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[70]. 
+				\\
+				Since actions and rewards are local, this approach falls under the concurrent learning class of MAS learning.
+				\\
+				Assuming agent observations and transitions are independent, the model is known as \textbf{TI dec-MDP} and its complexity is NP-complete, meaning a solution can be found in polynomial time by a nondeterministic Turing machine. This model can be further simplified by assuming independent rewards to obtain a \textbf{P-complete} complexity in the worst case.
+		
+		   \subsubsection{Partially observable MDP(POMDP)}
+			   \paragraph{Multiagent POMDP} extends M-MDP to partially observable environments, and is \textbf{PSAPCE-complete} which means the algorithm’s \textbf{memory requirements are polynomial function of the input size}. Like M-MDP, it is a team learning approach that has a central learner, and employed Bayesian RL framework to learn policies \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[99].
+			   
+			   \paragraph{Dec-POMDP} Generalizes POMDP to MAS where rewards are common and based on joint actions but observations are individualistic \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[9]. The goal is to maximize the reward of the entire system as agents collaborate to achieve a common task. Communication among agents can be explicit (Dec-POMDP-COM) or implicit (Dec-POMDP). This model is NEXP-complete \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[70]. Approximate solutions have been proposed based on bounded policy iteration \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[90], Q-value function methods [91], multiagent A* \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[81], genetic algorithms \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[82],
+				DP \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[92]–[94], and a Bayesian learning, stick-breaking policy algorithm \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[95]. A set of approximate inferences and heuristics including bootstrapping were used to find approximate solutions to Dec-POMDP in \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[96].
+				
+				\paragraph{Networked distributed POMDP (ND-POMDP)} assumes \textbf{local interaction among agents} to reduce the computational cost of finding policies \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[100].  ND-POMDP is a factored Dec-POMDP model where observations and transitions are independent and rewards are divided among neighboring agents. Its worst case computational complexity is NEXP-complete. Algorithms used to find policies for this model include multiagent RL \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[101], DP \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[102], and distributed constrained optimization \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[100].
+				
+				\paragraph{Interactive POMDP (I-POMDP)}Interactive POMDP (I-POMDP), a concurrent learning approach, generalizes POMDP to MAS by modeling other agents in the system while maintaining a belief of the system state \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[103]. 
+					\subparagraph{Finitely nested I-POMDP} is PSPACE-complete \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[98] and approximate solutions have been proposed based on particle filters \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[104], value iteration \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[105], and Monte Carlo sampling methods \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[106].
+			\subsubsection{Insight}
+				MDP and its variants have been widely adopted in many \textbf{complex} MAS decision making problems, despite the very  \textbf{restrictive} Markovian assumption. Even though these models do \textbf{not scale well}, they are able to handle agent \textbf{heterogeneity}. Deep learning has allowed the extension of MDPs from the discrete space to the \textbf{continuous space}, which is more suitable for \textbf{robotic MAS}.
+				
+				
+		\subsection{Game Theory}
+			\subsubsection{Partially Observable Stochastic Games(POSG)}
+			(See decision-making)
+			POSG have been used to model learning sequential decision making in cooperative MAS \citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}->[115]. POSG have also been
+			used to model cooperative MAS decision making in partially observable Markovian environments \citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}->[115], \citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}->[117]. 
+			However, this model’s solution is intractable as the number of agents increases. Therefore, an approximate solution was computed based on Bayesian games to achieve decentralized control in robot teams with limited communication. The algorithm was validated on the two-robot tag problem, two-agent lady, and tiger problem and multiple access broadcast channel problems.
+			\subsubsection{Application of RL}
+			(First see RL application in Decision making and the full text is being taken from \cite{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}) Multi-agent RL allows cooperative MAS to complete tasks with minimal communication overhead by using the global immediate reward instead of the individual agent immediate reward in the Q-learning algorithm to solve repeated games \cite{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[234]. Validation on box pushing and sensor distribution demonstrated the superior performance of this algorithm compared to other approached. 
+			\\
+			Sparse interaction to negotiate equilibrium sets and transfer knowledge in multi-agent RL reduced computational complexity and led to better coordination and scalability, as shown by simulations on grid world games and robots shelving items in a warehouse \cite{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[240]. 
+			\\
+			Information sharing has been modeled as a MDP to reduce communication overhead without affecting performance \cite{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[12].
+			
+			
+			\subsubsection{Bayesian games}
+				(See decision-making -> Bayesian games)
+				  
+			\subsubsection{insight} While game theoretic approaches had been mainly used in \textbf{competitive MAS}, some models have gained popularity in \textbf{cooperative MAS} due to the agents’ capabilities of modeling other agents in the game. This property can be useful in robotic systems where robots are unable to communicate with others. However, this restricts the number of agents in the system due to increasing computational costs. Game theory’s systematic mathematical approach has been an attractive quality for many applications but combining it with some heuristic approaches such as deep learning might lead to improved performance in robotic applications and others.
+			\begin{itemize}
+				\item Advantages
+					\begin{itemize}
+						\item 
+					\end{itemize}
+				\item Disadvantages
+					\begin{itemize}
+						\item 
+					\end{itemize}
+			\end{itemize}
+		
+		\subsection{Swarm intelligence} 
+			Swarm intelligence describes the behavior of decentralized(see decision making) cooperative agents, whether natural or artificial, working toward a common global goal.Self-organized and distributed behavior of locally aware and locally interacting agents are pillars of swarm intelligence. Systems modeled in this fashion generally consist of many \textbf{autonomous} but \textbf{homogeneous agents} implementing \textbf{simple rules} with \textbf{agent interactions restricted to local neighborhoods}.
+			\subsubsection{inspired by biology} 
+				\paragraph{Bee colony behavior}
+				Many algorithms have been inspired by bee colony behavior. Bee colony optimization is based on \textbf{direct communication} among agents performing a series of moves for a certain duration based on the strength or fitness of the solution, also known as “waggle dancing.” This recruits other agents to the most fit solution.
+				
+				\textbf{Navigation} is based on path integration where agents continuously update a vector indicating the position of the start location.
+				\\
+				\paragraph{Ant colony optimization (ACO)}, inspired by ant colony behavior, is a class of algorithms that rely on \textbf{indirect communication.}
+				\textbf{Navigation} is based on depositing pheromones along the trail. A more fit solution results in stronger pheromones on the trail that lead to recruiting more agents. 
+				
+				\paragraph{PSO(particle swarm optimization )} is inspired by \textbf{flocks of bird} and \textbf{schools of fish} \citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}[124]. Agents \textbf{navigate} the environment searching for better solutions using principles from birds’ movements. A \textbf{pigeon inspired optimization} algorithm relied on the \textbf{magnetic field}, \textbf{sun} and \textbf{landmarks} to \textbf{achieve path planning} \citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}[125]. 
+				\\
+				\textbf{Distributed implementations of ACO} \citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}[126], [127], and \textbf{PSO} \citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}[128] have been developed to \textbf{speedup convergence}. 
+			
+			\subsubsection{Insight}
+			While such systems exhibit desirable properties like \textbf{robustness}, \textbf{flexibility}, \textbf{scalability}, low \textbf{complexity}, \textbf{inherent parallelism}, and \textbf{fault tolerance} \citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}[11], [129], they have important limitations. Most swarm systems consist of \textbf{identical agents}, leading to their limitations according to \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[129]. The agents must be \textbf{homogeneous} or can be \textbf{divided into a small number of homogeneous clusters} following simple rules to make decisions. 
+			\\
+			However, there are many applications, such as search and rescue operations, that require heterogeneous, complex agents working toward a common goal.
+		
+		\subsection{Graph theory}
+			Decision making in MAS have been modeled as graphs with nodes representing agents and edges representing interactions and information flow among agents \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[130]. 
+			\subsubsection{Influence diagram(ID)}
+			\textbf{Decision nodes (rectangles)} represent choices available to the agent and utility nodes (diamonds) compute the utility of these choices. The action with the highest utility is chosen. 
+				\paragraph{Multiagent IDs (MAIDs)} generalizes IDs to MAS by generating decision rules that depend on decision rules made by other agents  \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[134]. 
+				\\
+				This is graphically represented by connecting decision nodes that depend on each other; a directed relevance graph is thus produced. 
+				\\
+				\paragraph{MAIDs} represent games with imperfect information graphically and are an alternative to the normal and extensive forms of game representation  \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[133]. They can be converted either to extensive form games or to IDs and then solved.
+				\paragraph{Network of IDs (NIDs)} A network of IDs (NIDs) is built on top of MAIDs to account for uncertainties in other agents’ decision making and hierarchy of beliefs  \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[135]. This formalism can represent irrational behavior and distinguishes between different agent models in the systems, i.e., it does not treat all other
+				agents identically. (Both MAID and NID are applicable to episodic decision making only. )
+					\subparagraph{Acyclic NIDs} can be solved using a bottom up approach by converting each block to a MAID and
+					solving it. Duplicates are included to account for beliefs about others’ strategies.
+					\subparagraph{Cyclic NIDs} are converted to acyclic NIDs and solved.
+				\paragraph{Interactive DIDs} (D stands for dynamic see decision making)were proposed in  \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[133] as an MAS extension of DIDs and can be
+				viewed as computational counterparts of I-POMDP. Models of other agents are \textit{clustered to reduce computational complexity} but lead to \textit{approximate solutions}.
+			\subsection{Insight} 
+				
+				\paragraph{Advantages} Graph theory models the interaction of agents, allowing them to exchange information and make decision accordingly. 
+				
+				\paragraph{Disadvantages} The computational complexity of this approach increases exponentially in densely connected graphs with many nodes (agents). The main benefits of graph theory in MAS come from combining it with other approaches such as MDPs and control theory (discussed next) to extend these approaches to MAS. Furthermore, exploiting special structures such as \textbf{sparsely connected dense subgraphs} are a common approach to reduce computational cost and improve performance.
+			
+			\subsection{Control Theory} 
+				As automation problems became more complex, researchers extended control theory to MAS by developing distributed controllers.
+				
+				\subsubsection{Distributed Cooperative Control} Distributed controllers are designed by \textbf{combining} concepts from \textbf{control} and \textbf{graph theory}. 
+				
+				Specifically, interactions among agents are modeled using graph theory and the control problem is decomposed among the agents to obtain a distributed controller. 
+				
+				The amount of communication among agents is dependent on the design of the distributed controller and can vary based on the nature and complexity of the task (whether it is easy decomposable), the optimality of the control algorithm and other factors. 
+				
+				Since many controllers are based on \textbf{optimization algorithms}, distributed optimization is an integral part of distributed control \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[136]. Unlike other approaches, distributed cooperative controllers designed using control and graph theory can be mathematical validated to prove optimality, stability, robustness, and convergence, to name a few properties. Distributed controllers have been applied to various control problems. For example, a \textbf{Lyapunov-based} voltage and frequency controller was designed for micro-grid systems that only  requires local \textbf{communication among neighbors} \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[137] and a secondary voltage distributed controller based on input–output feedback linearization that requires sparse communication \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[138]. 
+				\\
+				A Lyapunov-based distributed lead-follower control system was developed that scaled to large MAS when the interaction topology is an undirected graph  \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[139]. Distributed consensus tracking was achieved by designing: distributed adaptive controllers in weakly connected, directed graphs \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[140], a distributed optimal control algorithm \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[141], and nonlinear distributed impulsive control (control signals are given as impulses instead of continuously) with delayed impulses in undirected graphs \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[142]. Stochastic sampling in  leader-follower consensus problems has been shown to improve scalability of MAS \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[143]. Distributed impulsive control has also been applied to heterogeneous MAS synchronization problems \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[144]. \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[145] proposed distributed output regularization using adaptive control in MAS with a switching topology. Other applications include formation control \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[146] and navigation \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[147] in MRS.
+					
+				\subsubsection{insight}
+					\paragraph{Advantages}
+						Adopts systematic mathematical approaches to develop controllers, 
+					\paragraph{Disadvantages}some systems are simply too complex and intractable for such methods. For example, most algorithms assume linear systems. Therefore, data-driven methods such as those in distributed artificial intelligence are necessary to automate certain complex tasks in real-world environments.
+					\paragraph{Overall}
+					 Nevertheless, distributed cooperative controllers are necessary in some applications where \underline{sufficient data} is not available or \underline{mathematically proven} \underline{optimal controllers are crucial} like in \underline{aviation} or \underline{military domains}.
+				
+				
+			\subsection{Application} 
+				\subsubsection{Robotics} see robotics decision making section
+				\subsubsection{Repeated Coalition Formation}
+				\subsubsection{Intelligent Transport Networks}
+				\subsubsection{Wireless Sensor Networks}
+				\subsubsection{Intrusion Detection}
+				\subsubsection{Other Applications}
+			
+			\subsection{Challenges}
+				\subsubsection{Scalability}
+				Decision making algorithms should be scalable, especially in heterogeneous MAS, to accomplish more complex tasks. 
+				Scalability relies on 
+					\begin{itemize}
+						\item homogeneity
+						\item level of interaction
+					\end{itemize}
+				
+				 \paragraph{Swarm intelligence} can scale to large MAS since agents are homogeneous and interaction is minimal and restricted to the agent’s neighborhood. 
+				 
+				 \paragraph{MDP and Game theoretic} \textbf{MDP} variants and \textbf{game theoretic} models do \textbf{not} scale well since the complexity of the algorithm increases exponentially due to the model formulation that results in exponentially large state spaces. Using the \textbf{graph theoretic} formulation for large MAS results in \textbf{densely connected graphs} which are \textbf{computationally expensive}.
+					
+					
+				
+				\subsubsection{Computational Complexity}
+					Causes:
+					\begin{itemize}
+						\item \textbf{real-time decision making} in some applications or the 
+						
+						\item \textbf{lack of enough computational resources} of agents. 
+						
+						\item Agent \textbf{interactions} MAS increases the computational cost per agent as the number of agents increases, especially in methods that extend single agent models to MAS if careful consideration of interaction cost is not performed. 
+						
+						\item \textbf{Tightly coordinated} tasks also increase the computational burden due to the large amount of communication and data exchange among agents. 
+					\end{itemize}
+				
+				\subsubsection{Dynamic Environments}
+				The environment's dynamic and \textbf{unpredictable} nature makes it difficult to \textbf{foresee}, \textbf{design} and \textbf{test} an agent that can handle all these situations. Therefore, decision making algorithms should \textbf{generalize} well to situations that have not been learned or tested. 
+				
+				They should be able to adapt to the \textbf{dynamic environment} and various \textbf{uncertainties} it might encounter and should be robust to \textbf{noisy} and \textbf{incomplete information} generated by sensors, and \textbf{nondeterministic} actions. 
+				
+				\textbf{POMDP}, \textbf{IDs}, \textbf{POSG}, and \textbf{Bayesian games} are better suited to handle uncertainties than MDP and its variants that assume fully observable environments, because they account for \textbf{partially observable environments}, incomplete and \textbf{imperfect information} in their  algorithms. \textbf{Agent failures} are also a source of uncertainty in MAS that hinder the completion of tasks. 
+				
+				Unlike other models, \textbf{swarm intelligence} models are \textbf{better} suited to handle \textbf{agent failures} due to the homogeneous nature of agents and minimal interaction necessary. However, this is still an issue that needs to be considered whenever MAS are designed.
+				
+				\subsubsection{System Heterogeneity}
+				Advantageous of heterogeneous systems:
+				\begin{itemize}
+					\item can deal better with \textbf{environment diversity}
+					\item can deal better with \textbf{complex tasks}
+				\end{itemize}
+				
+				Disadvantages
+				\begin{itemize}
+					\item makes cooperative decision making more complex
+					\item agents need to model other agents when capability uncertainty exists
+					\item agent capabilities should be compatible
+					\item agents should have or achieve a common language to communicate and interact
+				\end{itemize}
+				
+				\textbf{Swarm intelligence} simplifies modeling by assuming all agents are \textbf{homogeneous}. 
+				
+				\textbf{Graph theoretic} models, \textbf{POSG} and its subclasses can handle heterogeneous MAS if the \textbf{state} and \textbf{observation spaces} are designed appropriately. 
+				
+				\textbf{I-POMDP} and \textbf{I-DID} inherently model other agents, making them better than other graph and game theoretic models in dealing with MAS heterogeneity.
+				
+				
+				\subsubsection{Big Data}
+					Algorithms that model and generate representations of such big data like  convolutional neural networks (deep learning) produce \textbf{computationally expensive} models that are not suitable for computationally limited agents or decision making algorithms whose computational cost grows exponentially with the  \textbf{dimensionality} of the data. 
+					
+					Yet, allowing agents to access these models through the \textbf{cloud} has its own complications with respect to \textbf{cloud accessibility}, \textbf{bandwidth constraints}, \textbf{representation compatibility}, \textbf{privacy}, and \textbf{security}.
+					
+					
+				\subsubsection{Evaluation Standards}
+					Decision-making algorithms are generally evaluated based on \underline{policy optimality} and their \underline{time} and \underline{space complexity}.
+					Evaluation standards are necessary in MAS decision making to \underline{compare proposed algorithms} and \underline{assess the state-of-the-art}. 
+					
+					\paragraph{General metrics}
+						\begin{itemize}
+							\item solution optimality
+							\item algorithm completeness
+							\item algorithm time
+							\item space complexity
+						\end{itemize}
+					
+					Braubach et al. \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[257] developed abstract metrics that would be specialized for \underline{MAS applications}, and include 
+					\begin{itemize}
+						\item function (e.g., restrictions)
+						\item usability (e.g., simplicity)
+						\item operating ability (e.g., performance)
+						\item pragmatic metrics (e.g., installation)
+					\end{itemize}
+				
+					Lass et al. \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[258] distinguished between two metric categories: 
+					\begin{itemize}
+						\item effectiveness (e.g., success, failure, and 90\% accuracy)
+						\item performance (e.g., resource consumption and time complexity)
+					\end{itemize}
+					that could be applied to four MAS levels:
+					\begin{itemize}
+						\item agent
+						\item framework
+						\item platform
+						\item host
+					\end{itemize}
+					They presented a framework to select appropriate metrics for a given application and performed a case study on a distributed constrained optimization problem. 
+					Di Bitonto et al.  \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[259] developed a hierarchical metric system where both \textit{interagent (communication and cooperation)} and \textit{intra-agent metrics} measured 
+					\begin{itemize}
+						\item environment complexity
+						\item agent rationality
+						\item autonomy
+						\item reactivity
+						\item adaptability
+					\end{itemize}
+					This system was tested on a knowledge management problem for the automotive industry with two agents only. 
+					
+					Marir et al. \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[260] proposed an evaluation platform that included metrics like average of \underline{communication load} and validated the platform on an \underline{auctioning problem}. 
+					
+					Nevertheless, standards to evaluate and compare the performance of MAS on real-world environments are still underdeveloped. Existing metrics have been tested on a hand-full of narrow-scoped scenarios that did not necessarily include robot agents.
+				
+				\subsection{Human in the loop}
+				In MRS The term human-in-the-loop refers to a system architecture that requires robots or agents to interact with humans. Humans’ involvement can range from giving agents instructions to executing actions alongside other robots and tele-operating vehicles. The benefits of such systems include expanding the scope of tasks MRS can execute without achieving full autonomy, complementing the skills of MRS with those of humans to efficiently execute certain tasks, giving humans more control over the system and improving system adaptability and resistance to environmental stochasticity. However, this system is also faced with many challenges from communication to responsiveness and fault tolerance. Communicating with agents via text requires the agents to perform natural language processing to parse messages and text generation to send messages. Communicating via speech imposes additional complexity by requiring the integrations of speech recognition and synthesis modules. While these fields have seen significant strides in recent years with the emergence of deep learning and big data, embodied by systems like Siri, Amazon Alexa,
+				and others \cite{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[129], accuracy, computational complexity, and responsiveness are still issues that need improvements before incorporating them into more complex systems with coordination, synchronization, and time constraints \cite{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[89]. The responsiveness of the system will suffer when incorporating humans in the loop due to the additional communication overhead and human performance variability. Finally, such systems may be more error prone and could be affected by human fatigue and distractions. Therefore, determining whether human-in-the-loop is an asset or liability in a given scenario is key to choosing the right system architecture that would lead to the successful completion of tasks.
+				
+				
+				\subsubsection{Transfer Learning} 
+				(In MRS) The highly stochastic nature of real-world environments and the variability in agent capabilities within heterogeneous MRS imply that a given MRS will rarely encounter two identical scenarios. However, MRS will encounter many similar scenarios. Therefore, leveraging previous experiences to improve current decision making would significantly improve the performance, adapt-
+				ability, and robustness of MRS. Transfer learning is a learning paradigm that allows agents to jump-start their learning by transferring knowledge from previous experiences to current reinforcement learning problems instead of learning from scratch during every new scenario \cite{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[213]. Transfer learning has been applied to MAS \cite{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[151, 212] and MRS \cite{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[50] but has yet to be tested in
+				end-to-end systems deployed in the real world on complex tasks. Furthermore, transfer learning for RL has been mainly tested on benchmark problems and gaming environments but not in real-world environments. Therefore, this field of research, which started gaining traction less than two decades ago \cite{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[213], still has many open problems that must be addressed before successful integra	tion into MRS in the real world can be realized.
+				
+				\subsubsection{Lack of a Unified Framework}
+				In MRS - Significant contributions have been made to the various modules in Figure \cite{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}2. However, one reason that has hindered the successful deployment of fully automated MRS is the fact that most of the work has mainly dealt with these modules independently. Taking a more holistic approach by viewing these research fields as connected within a larger field is necessary to take steps toward successful MRS deployments. Furthermore, feedback connections between the different modules should be incorporated into the workflow to further improve its efficacy. For example, task decomposition should be influenced by the capabilities of the agents and coalitions, as well as the environment’s state estimated by the perception module and vice versa. End-to-end simulations
+				and real-world experiments will also help in improving the formulated models by identifying major weaknesses preventing successful deployment.
+				
+				\subsubsection{Other Challenges}
+					\begin{itemize}
+						\item Task complexity poses a challenge for decision making algorithms because they do not have the capability of recognizing what tasks can be decomposed into simpler tasks that they can complete. Adding this capability to decision making algorithms in MAS in addition to dynamically recognizing what tasks require tight coordination and what tasks can be accomplished with minimal interaction among agents will increase the scope of automated tasks.
+						
+						\item Learning algorithms for decision making and perceiving agents should be autonomous. Reducing the number of manually tunable hyper parameters that require human intervention will allow algorithms to generalize better to unknown environments.
+						
+						\item  (In MRS) Communication constraints and connectivity uncertainty further complicate things for cooperative MRS, especially for tightly coordinated problems. While connecting MRS to the cloud also allows us to reduce the computational load on these mobile devices and improve their performance \cite{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[222], the existence and stability of this connection is uncertain and may sometimes cripple the system instead of improving its performance. 
+						
+						\item (In MRS) The time sensitivity of certain tasks and limited hardware resources of robots requires the development of efficient algorithms for decision making, perception, coalition formation, and task decomposition and allocation. 
+						
+						\item (In MRS) Evaluation standards are needed to effectively compare the performance of MRS, as they are still underdeveloped.
+					\end{itemize}
+				
+		\subsection{Swarm intelligence} 
+			\begin{itemize}
+				\item Multi-objective particle swarm optimization (PSO) variants (see \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}->[17].
+				)
+				\item algorithms based on bees \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}->[18]
+				\item meta-heuristic algorithms \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}->[19]
+				\item artificial bee colony variants and applications \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}->[20]
+			\end{itemize}
+			
+			\subsubsection{Biologically Inspired Algorithms}
+			Swarm intelligence was inspired by many social insects and animals  including ants, bees, wasps, termites, bats, fish, and birds. In some ways, swarm intelligence is similar to RL; both are iterative algorithms that use a reinforcement signal to learn a solution \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[121]. However, the reinforcement signal modifies the behavior of the agent differently in both algorithms. Many algorithms have been inspired by bee colony behavior. Bee colony optimization \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[122] is based on direct communication among agents performing a series of moves for a certain duration based on the strength or fitness of the solution, also known as “waggle dancing.” This recruits other agents to the most fit solution. Navigation is based on path integration where agents continuously update a vector indicating the position of the start location. Ant colony optimization (ACO), inspired by ant colony behavior, is a class of algorithms that rely on indirect communication \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[123]. Navigation is based on deposit-
+			ing pheromones along the trail. A more fit solution results in stronger pheromones on the trail that lead to recruiting
+			more agents. PSO is inspired by flocks of bird and schools of fish \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[124]. Agents navigate the environment searching for better solutions using principles from birds’ movements. A pigeon inspired optimization algorithm relied on the magnetic field, sun and landmarks to achieve path planning \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[125]. Distributed
+			implementations of ACO \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[126], [127], and PSO \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[128] have been developed to speedup convergence.
+			
+			\subsubsection{Insight}
+			While such systems exhibit desirable properties like robustness, flexibility, scalability, low complexity, inherent parallelism, and fault tolerance \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[11], [129], they have important limitations. Most swarm systems consist of identical agents,
+			leading to their limitations according to \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[129]. The agents must be homogeneous or can be divided into a small number of homogeneous clusters following simple rules to make decisions. However, there are many applications, such as search and rescue operations, that require heterogeneous, complex agents working toward a common goal.
+			
+			
+	\section{Terms and definitions}
+		\paragraph{Homogeneity and heterogeneity} Homogeneity and heterogeneity are concepts often used in the sciences and statistics relating to the uniformity in a substance or organism. A material or image that is homogeneous is uniform in composition or character (i.e. color, shape, size, weight, height, distribution, texture, language, income, disease, temperature, radioactivity, architectural design, etc.); one that is heterogeneous is distinctly nonuniform in one of these qualities.
+		\paragraph{Game theory}
+		the study of mathematical models of strategic interaction among rational decision-makers
+		\url{https://en.wikipedia.org/wiki/Game_theory}
+	\bibliography{/home/donkarlo/Dropbox/projs/research/refs}
+\end{document}

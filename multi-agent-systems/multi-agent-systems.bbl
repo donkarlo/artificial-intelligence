@@ -1,0 +1,112 @@
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Arai et~al.(2002)Arai, Pagello, and
+  Parker]{arai-2002-guest-editorial-advances-in-multirobot-systems}
+Tamio Arai, Enrico Pagello, and Lynne~E. Parker.
+\newblock Guest editorial advances in multirobot systems.
+\newblock \emph{{IEEE} Trans. Robotics and Automation}, 18\penalty0
+  (5):\penalty0 655--661, 2002.
+
+\bibitem[Chai(2018)]{chai-2018-language-to-action-towards-interactive-task-learning-with-physical-agents}
+Joyce~Y. Chai.
+\newblock Language to action: Towards interactive task learning with physical
+  agents.
+\newblock page~6. International Foundation for Autonomous Agents and Multiagent
+  Systems Richland, SC, {USA} / {ACM}, 2018.
+
+\bibitem[Ciprich et~al.(2008)Ciprich, Duz{\'{\i}}, Frydrych, Kohut, and
+  Kosin{\'{a}}r]{ciprich-2008-the-architecture-of-an-intelligent-agent-in-mas}
+Nikola Ciprich, Marie Duz{\'{\i}}, Tom{\'{a}}s Frydrych, Ondrej Kohut, and
+  Michal Kosin{\'{a}}r.
+\newblock The architecture of an intelligent agent in {MAS}.
+\newblock 2008.
+
+\bibitem[Doubleday et~al.(2016)Doubleday, Trott, and
+  Feldman]{doubleday-2016-processing-natural-language-about-ongoing-actions}
+Steve Doubleday, Sean Trott, and Jerome Feldman.
+\newblock Processing natural language about ongoing actions.
+\newblock \emph{CoRR}, abs/1607.06875, 2016.
+
+\bibitem[Ferrera et~al.(2014)Ferrera, Rodríguez~Castaño, Capitán, Marrón,
+  and
+  Ollero]{ferrera-2014-multi-robot-operation-system-with-conflict-resolution}
+Eduardo Ferrera, Ángel Rodríguez~Castaño, Jesus Capitán, Pedro Marrón, and
+  Anibal Ollero.
+\newblock Multi-robot operation system with conflict resolution.
+\newblock 2014.
+
+\bibitem[Jiang et~al.(2019)Jiang, Yedidsion, Zhang, Sharon, and
+  Stone]{jiang-2019-multi-robot-planning-with-conflicts-and-synergies}
+Yuqian Jiang, Harel Yedidsion, Shiqi Zhang, Guni Sharon, and Peter Stone.
+\newblock Multi-robot planning with conflicts and synergies.
+\newblock 2019.
+
+\bibitem[{Kutzke} and
+  {Bays}(2019)]{kutzke-2019-conflict-resolution-for-heterogeneous-teams-in-communication-limited-environments-a-generous-agent-approach}
+D.~T. {Kutzke} and M.~J. {Bays}.
+\newblock Conflict resolution for heterogeneous teams in communication-limited
+  environments: A generous agent approach.
+\newblock In \emph{2019 IEEE 15th International Conference on Automation
+  Science and Engineering (CASE)}, 2019.
+
+\bibitem[Mavridis(2015)]{mavridis-2015-a-review-of-verbal-and-non-verbal-human-robot-interactive-communication}
+Nikolaos Mavridis.
+\newblock A review of verbal and non-verbal human-robot interactive
+  communication.
+\newblock \emph{Robotics Auton. Syst.}, 63:\penalty0 22--35, 2015.
+
+\bibitem[Ngobye et~al.(2010)Ngobye, de~Groot, and van~der
+  Weide]{ngobye-2010-types-and-priorities-of-multi-agent-system-interactions}
+Martin Ngobye, Wouter~T. de~Groot, and Theo~P. van~der Weide.
+\newblock Types and priorities of multi-agent system interactions.
+\newblock \emph{Interdisciplinary Description of Complex Systems - scientific
+  journal}, 8\penalty0 (1):\penalty0 49--58, 2010.
+
+\bibitem[Rizk et~al.(2018)Rizk, Awad, and
+  Tunstel]{rizk-2018-decision-making-in-multiagent-systems-a-survey}
+Yara Rizk, Mariette Awad, and Edward~W. Tunstel.
+\newblock Decision making in multiagent systems: {A} survey.
+\newblock \emph{{IEEE} Trans. Cogn. Dev. Syst.}, 10\penalty0 (3):\penalty0
+  514--529, 2018.
+
+\bibitem[Rizk et~al.(2019)Rizk, Awad, and
+  Tunstel]{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}
+Yara Rizk, Mariette Awad, and Edward~W. Tunstel.
+\newblock Cooperative heterogeneous multi-robot systems: {A} survey.
+\newblock \emph{{ACM} Comput. Surv.}, 52\penalty0 (2):\penalty0 29:1--29:31,
+  2019.
+
+\bibitem[Santos et~al.(2018)Santos, Zahn, Silvestre, Silva, and
+  Vasconcelos]{santos-2018-detection-and-resolution-of-normative-conflicts-in-multi-agent-systems-a-literature-survey}
+Jessica Santos, Jean Zahn, Eduardo Silvestre, Viviane Silva, and Wamberto
+  Vasconcelos.
+\newblock Detection and resolution of normative conflicts in multi-agent
+  systems: A literature survey.
+\newblock 11 2018.
+
+\bibitem[Shoham and
+  Leyton{-}Brown(2009)]{shoham-2009-multiagent-systems-algorithmic-game-theoretic-and-logical-foundations}
+Yoav Shoham and Kevin Leyton{-}Brown.
+\newblock \emph{Multiagent Systems - Algorithmic, Game-Theoretic, and Logical
+  Foundations}.
+\newblock Cambridge University Press, 2009.
+
+\bibitem[W.~Alshabi(2007)]{alshabi-2007-coordination-cooperation-and-conflict-resolution-in-multi-agent-systems}
+M.~Itmi H.~Abdulrab W.~Alshabi, S.~Ramaswamy.
+\newblock Coordination, cooperation and conflict resolution in multi-agent
+  systems.
+\newblock 2007.
+
+\bibitem[Yan et~al.(2013)Yan, Jouandeau, and
+  Cherif]{yan-2013-a-survey-and-analysis-of-multi-robot-coordination}
+Zhi Yan, Nicolas Jouandeau, and Arab~Ali Cherif.
+\newblock A survey and analysis of multi-robot coordination.
+\newblock \emph{International Journal of Advanced Robotic Systems}, 10\penalty0
+  (12):\penalty0 399, 2013.
+
+\end{thebibliography}

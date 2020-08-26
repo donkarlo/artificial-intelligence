@@ -1,0 +1,77 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: transportation.aux
+The style file: plainnat.bst
+Database file #1: /home/donkarlo/Dropbox/projs/research/refs.bib
+Repeated entry---line 193 of file /home/donkarlo/Dropbox/projs/research/refs.bib
+ : @inproceedings{thapa-2019-cooperative-aerial-load-transport-with-attitude-stabilization
+ :                                                                                        ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "marina-2019-flexible-collaborative-transportation-by-a-team-of-rotorcraft" isn't style-file defined
+--line 262 of file /home/donkarlo/Dropbox/projs/research/refs.bib
+Repeated entry---line 345 of file /home/donkarlo/Dropbox/projs/research/refs.bib
+ : @inproceedings{mellinger-2010-cooperative-grasping-and-transport-using-multiple-quadrotors
+ :                                                                                           ,
+I'm skipping whatever remains of this entry
+Warning--empty booktitle in bandala-2018-payload-lift-and-transport-using-decentralized-unmanned-aerial-vehicle-quadcopter-teams
+Warning--empty booktitle in chen-2019-cooperative-transportation-of-cable-suspended-slender-payload-using-two-quadrotors
+Warning--empty journal in chung-2018-a-survey-on-aerial-swarm-robotics
+Warning--empty journal in coppola-2020-a-survey-on-swarming-with-micro-air-vehicles-fundamental-challenges-and-constraints
+Warning--empty journal in erskine-2019-wrench-analysis-of-cable-suspended-parallel-robots-actuated-by-quadrotor-unmanned-aerial-vehicles
+Warning--empty journal in gelblum-2017-ant-groups-optimally-amplify-the-effect-of-transiently-informed-individuals
+Warning--empty booktitle in guerrero-2015-passivity-based-control-for-a-quadrotor-uav-transporting-a-cable-suspended-payload-with-minimum-swing
+Warning--empty booktitle in lavalle-1998-rapidly-exploring-random-trees-a-new-tool-for-path-planning
+Warning--empty booktitle in michael-2009-cooperative-manipulation-and-transportation-with-aerial-robots
+Warning--empty journal in mohammadi-2020-control-of-multiple-quad-copters-with-a-cable-suspended-payload-subject-to-disturbances
+Warning--empty journal in mohiuddin-2020-a-survey-of-single-and-multi-uav-aerial-manipulation
+Warning--empty booktitle in nguyen-2015-aerial-tool-operation-system-using-quadrotors-as-rotating-thrust-generators
+Warning--empty journal in ollero-2018-the-aeroarms-project-aerial-robots-with-advanced-manipulation-capabilities-for-inspection-and-maintenance
+Warning--empty journal in rezaee-2017-almost-sure-attitude-consensus-in-multispacecraft-systems-with-stochastic-communication-links
+Warning--empty journal in ruggiero-2018-introduction-to-the-special-issue-on-aerial-manipulation
+Warning--empty journal in tagliabue-2017-robust-collaborative-object-transportation-using-multiple-mavs
+Warning--empty journal in vasarhelyi-2014-outdoor-flocking-and-formation-flight-with-autonomous-aerial-robots
+Warning--empty journal in villa-2019-a-survey-on-load-transportation-using-multirotor-uavs
+Warning--empty booktitle in wu-2020-cooperative-transportation-of-drones-without-inter-agent-communication
+Warning--empty booktitle in han-2010-collective-decision-making-in-multi-agent-systems-by-implicit-leadership
+You've used 40 entries,
+            2773 wiz_defined-function locations,
+            766 strings with 15342 characters,
+and the built_in function-call counts, 20675 in all, are:
+= -- 1705
+> -- 1476
+< -- 16
++ -- 494
+- -- 453
+* -- 1707
+:= -- 3148
+add.period$ -- 120
+call.type$ -- 40
+change.case$ -- 270
+chr.to.int$ -- 39
+cite$ -- 100
+duplicate$ -- 931
+empty$ -- 1570
+format.name$ -- 505
+if$ -- 4346
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 38
+newline$ -- 208
+num.names$ -- 160
+pop$ -- 621
+preamble$ -- 1
+purify$ -- 230
+quote$ -- 0
+skip$ -- 760
+stack$ -- 0
+substring$ -- 512
+swap$ -- 125
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 440
+warning$ -- 20
+while$ -- 146
+width$ -- 0
+write$ -- 482
+(There were 2 error messages)

@@ -1,0 +1,248 @@
+\documentclass{article}
+\usepackage{comment}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\pagenumbering{arabic}
+\usepackage{multicol}
+\usepackage{siunitx}
+\usepackage{soul}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Mohammad Rahmani}
+\lhead{Cooperative aerial load transportation}
+
+\newcommand{\ignore}[1]{}
+\begin{document}
+	\bibliographystyle{plainnat}
+	\title{Cooperative aerial load transportation / Areal manipulation}
+	\author{Mohammad Rahmani}
+	\date{}
+	\maketitle
+	\section{Motion planning}
+		\paragraph{Swarms in general}
+			\cite{medina-2018-robotic-swarm-motion-planning-for-load-carrying-and-manipulating}
+		\paragraph{Taking the appropriate formation}
+			\cite{vasarhelyi-2014-outdoor-flocking-and-formation-flight-with-autonomous-aerial-robots}
+			\cite{soria-2020-swarmlab-a-matlab-drone-swarm-simulator}
+		\paragraph {Collective decision making}
+			\cite{han-2010-collective-decision-making-in-multi-agent-systems-by-implicit-leadership}
+		\paragraph {Nature inspired}
+			\cite{gelblum-2017-ant-groups-optimally-amplify-the-effect-of-transiently-informed-individuals}
+		\paragraph{Trajectory}
+			\subparagraph{Slalom}
+			\cite{loianno-2017-cooperative-transportation-using-small-quadrotors-using-monocular-vision-and-inertial-sensing}\footnote{\url{https://www.youtube.com/watch?v=Ilrb_P-8od4} Time 1:13}
+			\subparagraph{Altitude modification}
+			\cite{loianno-2017-cooperative-transportation-using-small-quadrotors-using-monocular-vision-and-inertial-sensing}\footnote{\url{https://www.youtube.com/watch?v=Ilrb_P-8od4} Time 0.58}
+		\paragraph{Obstacle avoidance}
+			\cite{lee-2018-an-integrated-framework-for-cooperative-aerial-manipulators-in-unknown-environments}\footnote{\url{https://www.youtube.com/watch?v=kX1qzZJPmcE}} offers a total framework for stable flight with obstacles.
+			\cite{spurny-2019-cooperative-transport-of-large-objects-by-a-pair-of-unmanned-aerial-systems-using-sampling-based-motion-planning} which carries rod-shape load between obstacles in real environment.
+			\cite{loianno-2017-cooperative-transportation-using-small-quadrotors-using-monocular-vision-and-inertial-sensing}
+			slalom path
+		\paragraph{Algorithms}
+			\subparagraph{Rapidly-exploring Random Tree \cite{lavalle-1998-rapidly-exploring-random-trees-a-new-tool-for-path-planning}}
+			 \cite{spurny-2019-cooperative-transport-of-large-objects-by-a-pair-of-unmanned-aerial-systems-using-sampling-based-motion-planning} The proposed method uses a stochastic optimization with the aim to find a solution in which the states with distance between the UAVs close to the desired one are preferred which increases reliability and efficiency of the cooperative carrying task. 
+	\section{Attachment type}
+		\paragraph{Cable suspension}
+		\subparagraph{From different points}
+		\cite{michael-2009-cooperative-manipulation-and-transportation-with-aerial-robots} discusses lifting a triangle with three drones. 
+		\cite{masone-2016-cooperative-transportation-of-a-payload-using-quadrotors-a-reconfigurable-cable-driven-parallel-robot} which discusses a cube suspended from different points by cables connected to multiple drones.
+		\cite{mohiuddin-2020-energy-distribution-in-dual-uav-collaborative-transportation-through-load-sharing}
+		\cite{jiang-2013-the-inverse-kinematics-of-cooperative-transport-with-multiple-aerial-robots} inverse kinematics of a triangle.
+		\cite{sreenath-2013-dynamics-control-and-planning-for-cooperative-manipulation-of-payloads-suspended-by-cables-from-multiple-quadrotor-robots}
+		\subparagraph{From single point}
+		\cite{jackson-2020-scalable-cooperative-transport-of-cable-suspended-loads-with-uavs-using-distributed-trajectory-optimization}
+		\cite{guerrero-2015-passivity-based-control-for-a-quadrotor-uav-transporting-a-cable-suspended-payload-with-minimum-swing}\footnote{url{https://www.youtube.com/watch?v=TQ9O4UVHmJM}}
+		\cite{mohammadi-2020-control-of-multiple-quad-copters-with-a-cable-suspended-payload-subject-to-disturbances}
+		\footnote{\url{https://www.youtube.com/watch?v=TQ9O4UVHmJM,https://www.youtube.com/watch?v=aQ9rBlenekU}}
+		\cite{mohammadi-2018-decentralized-motion-control-in-a-cabled-based-multi-drone-load-transport-system}
+		\cite{marina-2019-flexible-collaborative-transportation-by-a-team-of-rotorcraft}
+		\cite{erskine-2019-wrench-analysis-of-cable-suspended-parallel-robots-actuated-by-quadrotor-unmanned-aerial-vehicles} \footnote{\url{https://www.youtube.com/watch?v=rOCvd4uHFV4}}
+		\cite{thapa-2019-cooperative-aerial-load-transport-with-attitude-stabilization}
+		\cite{xie-2020-towards-cooperative-transport-of-a-suspended-payload-via-two-aerial-robots-with-inertial-sensing} 
+		
+		\paragraph{Rigidly attached}
+		\cite{mellinger-2010-cooperative-grasping-and-transport-using-multiple-quadrotors}
+		\cite{loianno-2017-cooperative-transportation-using-small-quadrotors-using-monocular-vision-and-inertial-sensing}
+		\cite{tagliabue-2017-robust-collaborative-object-transportation-using-multiple-mavs}\footnote{\url{https://www.youtube.com/watch?v=QvjyDV8sNPo}}
+		\cite{mellinger-2010-cooperative-grasping-and-transport-using-multiple-quadrotors}\footnote{\url{https://www.youtube.com/watch?v=YBsJwapanWI}}
+		\cite{nguyen-2015-aerial-tool-operation-system-using-quadrotors-as-rotating-thrust-generators}\footnote{\url{https://www.youtube.com/watch?v=lAYUR7LpDEU}} with round, spherical connectors. 
+	
+	\section{Payload shape}
+		\paragraph{Shape un-aware}
+			\cite{tagliabue-2017-robust-collaborative-object-transportation-using-multiple-mavs}
+			\cite{mellinger-2010-cooperative-grasping-and-transport-using-multiple-quadrotors}
+		\paragraph{Rod-shaped}
+			\cite{tagliabue-2017-collaborative-transportation-using-mavs-via-passive-force-control}
+			\cite{tagliabue-2017-robust-collaborative-object-transportation-using-multiple-mavs}'s first experiment is performed by such tubes.
+			\cite{gassner-2017-dynamic-collaboration-without-communication-vision-based-cable-suspended-load-transport-with-two-quadrotors}
+			\cite{bandala-2018-payload-lift-and-transport-using-decentralized-unmanned-aerial-vehicle-quadcopter-teams}
+			\cite{wu-2020-cooperative-transportation-of-drones-without-inter-agent-communication}
+			\cite{mohiuddin-2020-energy-distribution-in-dual-uav-collaborative-transportation-through-load-sharing} which also covers un-equal load \footnote{\url{https://www.youtube.com/watch?v=o2K4BWfRGHk&t=219s}}.
+			\cite{spurny-2019-cooperative-transport-of-large-objects-by-a-pair-of-unmanned-aerial-systems-using-sampling-based-motion-planning}
+			\cite{lee-2018-an-integrated-framework-for-cooperative-aerial-manipulators-in-unknown-environments}\footnote{\url{https://www.youtube.com/watch?v=kX1qzZJPmcE}}
+		\paragraph{Regular polygon}
+			in both \cite{tagliabue-2017-collaborative-transportation-using-mavs-via-passive-force-control}
+			and \cite{tagliabue-2017-robust-collaborative-object-transportation-using-multiple-mavs}, the system is shape-unaware. 
+			\cite{jiang-2013-the-inverse-kinematics-of-cooperative-transport-with-multiple-aerial-robots} inverse kinematics of a triangle.
+			\cite{sreenath-2013-dynamics-control-and-planning-for-cooperative-manipulation-of-payloads-suspended-by-cables-from-multiple-quadrotor-robots}
+		\paragraph{Cylinder}
+			\cite{mohammadi-2018-decentralized-motion-control-in-a-cabled-based-multi-drone-load-transport-system}
+		\paragraph{Cube}
+			\cite{masone-2016-cooperative-transportation-of-a-payload-using-quadrotors-a-reconfigurable-cable-driven-parallel-robot}
+	\section{Formation control}
+		\paragraph{Centralized}
+			\cite{nguyen-2015-aerial-tool-operation-system-using-quadrotors-as-rotating-thrust-generators}
+			\subparagraph{Using motion capture systems}
+			\paragraph{Decentralized}
+			
+			\paragraph{Leader follower}
+			\cite{tagliabue-2017-robust-collaborative-object-transportation-using-multiple-mavs}
+			\cite{tagliabue-2017-collaborative-transportation-using-mavs-via-passive-force-control}
+			\cite{gassner-2017-dynamic-collaboration-without-communication-vision-based-cable-suspended-load-transport-with-two-quadrotors}
+			\cite{loianno-2017-cooperative-transportation-using-small-quadrotors-using-monocular-vision-and-inertial-sensing}
+			\cite{wu-2020-cooperative-transportation-of-drones-without-inter-agent-communication}
+			\cite{chen-2019-cooperative-transportation-of-cable-suspended-slender-payload-using-two-quadrotors}
+			\cite{xie-2020-towards-cooperative-transport-of-a-suspended-payload-via-two-aerial-robots-with-inertial-sensing} follower only uses its IMU information derived from cable's force which connects it to the leader.
+		\paragraph{Leaderless}
+			\cite{mohammadi-2018-decentralized-motion-control-in-a-cabled-based-multi-drone-load-transport-system,mohammadi-2020-control-of-multiple-quad-copters-with-a-cable-suspended-payload-subject-to-disturbances}
+			\cite{rezaee-2017-almost-sure-attitude-consensus-in-multispacecraft-systems-with-stochastic-communication-links}
+	\section{Communication}
+		\paragraph{Explicit} Each robot, uses other robots measurements.
+			\cite{loianno-2017-cooperative-transportation-using-small-quadrotors-using-monocular-vision-and-inertial-sensing}\footnote{\url{https://www.youtube.com/watch?v=Ilrb_P-8od4}}
+			\cite{masone-2016-cooperative-transportation-of-a-payload-using-quadrotors-a-reconfigurable-cable-driven-parallel-robot}
+			\cite{spurny-2019-cooperative-transport-of-large-objects-by-a-pair-of-unmanned-aerial-systems-using-sampling-based-motion-planning}\footnote{\url{https://www.youtube.com/watch?v=Pdg3j791I9c&feature=youtu.be}}\footnote{\url{https://www.youtube.com/watch?v=FQH769AnYbQ&feature=youtu.be}} the planning task is realized onboard of one of the robots and the obtained trajectories are shared (using Wi-Fi in the presented HW setup) with its neighbor to ensure reliable coordination of the system.
+			
+		\paragraph{Implicit} Implicitly by sensing the internal forces of the robots acting on the transported object
+			\cite{tagliabue-2017-robust-collaborative-object-transportation-using-multiple-mavs}
+			\cite{tagliabue-2017-collaborative-transportation-using-mavs-via-passive-force-control}
+			\cite{gassner-2017-dynamic-collaboration-without-communication-vision-based-cable-suspended-load-transport-with-two-quadrotors}\footnote{\url{https://www.youtube.com/watch?v=8pFBufXOumw}}
+			\cite{wu-2020-cooperative-transportation-of-drones-without-inter-agent-communication} \footnote{\url{https://www.youtube.com/watch?v=ib9IxCNAVPs}}
+			\cite{thapa-2019-cooperative-aerial-load-transport-with-attitude-stabilization}
+		\paragraph{No communication}
+			\cite{mohammadi-2018-decentralized-motion-control-in-a-cabled-based-multi-drone-load-transport-system,mohammadi-2020-control-of-multiple-quad-copters-with-a-cable-suspended-payload-subject-to-disturbances} uses a motion capture camera to coordinate. 
+	\section{Energy aware}
+		\cite{mohiuddin-2020-energy-distribution-in-dual-uav-collaborative-transportation-through-load-sharing}
+	
+	\section{Surveys}
+		\cite{chung-2018-a-survey-on-aerial-swarm-robotics}
+		\cite{coppola-2020-a-survey-on-swarming-with-micro-air-vehicles-fundamental-challenges-and-constraints}
+		\cite{villa-2019-a-survey-on-load-transportation-using-multirotor-uavs} discusses particularly load transportation with multi-rotor UAVs 
+		\cite{ruggiero-2018-introduction-to-the-special-issue-on-aerial-manipulation} discusses exclusively Areal manipulation
+		\cite{tuci-2018-cooperative-object-transport-in-multi-robot-systems-a-review-of-the-state-of-the-art} also discusses exclusively areal transportation. 
+		\cite{mohiuddin-2020-a-survey-of-single-and-multi-uav-aerial-manipulation} also discusses exclusively areal manipulation for both single and multiple agents. 
+	\section{Environment}
+		\paragraph{Static}
+		\paragraph{Dynamic}
+		\cite{spurny-2019-cooperative-transport-of-large-objects-by-a-pair-of-unmanned-aerial-systems-using-sampling-based-motion-planning}
+		\cite{mora-2017-multi-robot-formation-control-and-object-transport-in-dynamic-environments-via-constrained-optimization}
+	\section{Grasping}
+		\paragraph{Magnetic}
+			\cite{loianno-2017-cooperative-transportation-using-small-quadrotors-using-monocular-vision-and-inertial-sensing}
+			\cite{mellinger-2010-cooperative-grasping-and-transport-using-multiple-quadrotors}
+		\paragraph{friction-based}
+		\paragraph{Penetration based}
+		\paragraph{Spherical joints}
+			\cite{tagliabue-2017-robust-collaborative-object-transportation-using-multiple-mavs}
+	
+	\section{Projects}
+		\cite{ollero-2018-the-aeroarms-project-aerial-robots-with-advanced-manipulation-capabilities-for-inspection-and-maintenance}
+	\section{Others}
+	\section{Per paper}
+		\paragraph{\cite{spurny-2019-cooperative-transport-of-large-objects-by-a-pair-of-unmanned-aerial-systems-using-sampling-based-motion-planning}}
+			\begin{itemize}
+				\item \textbf{Motion planing} The environment is not dynamic. That is obstacles are already known and the motion is already planned.
+					\begin{itemize}
+						\item \textbf{Probabilistic Roadmaps (PRM)}: \cite{lavalle-1998-rapidly-exploring-random-trees-a-new-tool-for-path-planning}
+						\item \textbf{Rapidly Exploring Random Trees (RRT)}: \cite{kavraki-1996-probabilistic-roadmaps-for-path-planning-in-high-dimensional-configuration-spaces}
+					\end{itemize}
+				\item \textbf{Communication} Wifi
+				\item GPSS for localization
+			\end{itemize}
+		\paragraph{\cite{loianno-2017-cooperative-transportation-using-small-quadrotors-using-monocular-vision-and-inertial-sensing}}
+			\begin{itemize}
+				\item \textbf{Sensors}: 
+					\begin{itemize}
+						\item IMU
+						\item Camera
+					\end{itemize}
+				\item \textbf{Covers}
+					\begin{itemize}
+						\item Estimation
+						\item Control
+						\item Trajectory planning
+					\end{itemize}
+				\item \textbf{Key contributions}
+					\begin{itemize}
+						\item a new approach to coordinated control, which allows independent control of each vehicle while guaranteeing the system’s stability
+						\item a new cooperative localization scheme that allows each vehicle to benefit from measurements acquired by other vehicles
+					\end{itemize}
+			\end{itemize}
+		\paragraph{\cite{tagliabue-2017-robust-collaborative-object-transportation-using-multiple-mavs}}
+		Highlights
+		\begin{itemize}
+			\item Multiple MAVs mechanically coupled.
+			\item Uses spherical joints
+			\item doesn’t require force/torque sensors
+			\item decentralized
+			\item doesn’t rely on communication between agents and can be easily extended to multiple MAVs
+			\item  spherical joint, which guarantees attitude decoupling among agents and payload
+			\item kinetically constraints the translational dynamic of each agent to be the same as the motion of the payload
+			\item The task of the master is to lead and steer the group of vehicles connected to the payload towards a desired destination, while keeping a constant transportation altitude.
+			\item The slaves are not aware of the destination goal, but share the same altitude of the master, assisting their leader in the transportation task.
+			\item  Cooperation and coordination of the slave agents with respect to the movements of the master is achieved via re-
+			shaping the apparent physical properties of each slave, in order that maximum compliance to the actions of the master is guaranteed.
+			\item modify the inertial properties of each slave MAV to make it behave as a \textbf{passive point-mass},
+			accelerated by any interaction force applied on it and subject to viscous friction directly proportional to its own velocity. This new behavior can be achieved by means of \textbf{admittance control}.
+			\item The key idea behind admittance control is that a \textbf{position-controlled mechanical system} can achieve arbitrary
+			interaction dynamics by sensing the force coming from the environment and by accordingly generating and following
+			a reference trajectory. In order to do so, every slave agent is equipped with a force estimator, which senses the force
+			applied by the master to the payload. This force information is then used by the admittance controller to regulate the
+			position of the slave agent, so that it guarantees maximum possible compliance to the estimated force.
+			\item In a collaborative transportation maneuver, the master MAV agents behaves as if it was carrying the payload
+			alone, pulling it towards the desired goal while keeping a \textbf{constant altitude}. For this reason it only executes its on-board \textbf{reference tracking feedback loop}. The reference trajectory which leads it to the destination goal can be provided by a user or by an on-board or off-board planning system.
+			\item Information is instead shared via the payload itself, which is used as a medium to transfer the interaction force
+			applied by the master to the slaves. This information flow is mono-directional, from the master to the slaves, as the slaves
+			fully act according to the sensed force applied by the master on the transported structure, while the master executes its
+			standard reference tracking algorithms.
+			\item agents (a) do not have to agree on a \textbf{global inertial reference frame} 
+			\item do not need to share the destination goal. This is made possible by the fact that each slave on-line generates
+			a reference trajectory in the same frame as the external forces are estimated. The destination goal has to be known only by
+			the master and, as a consequence, has to be expressed in the master’s reference frame only.
+			
+			\item the agents can grasp the payload in such a way that its weight force can be equally distributed among the
+			agents.
+			
+		\end{itemize}
+		\paragraph{Reaching the transportation altitude / taking off and landing}
+			\begin{itemize}
+				\item A centralized Finite State Machine (FSM) sends altitude increment commands $\Delta h$ to both the agents and make
+				sure they both fulfill the command.
+			\end{itemize}
+		\paragraph{Agents low level architecture}
+			\subparagraph{State estimator}
+			\subparagraph{Position and attitude controller}
+		\paragraph{Slave-specific control architecture}
+			\subparagraph{Force estimator}
+				\begin{itemize}
+					\item Force estimates can be obtained from the sole inertial information provided by the on-board IMU and the state estimator
+					\item combined with the measurement of the rotational speed of the rotors
+				\end{itemize}
+			\subparagraph{Admittance controller}
+				 generates an on-line reference trajectory (position, velocity, attitude and angular velocity) for the position and attitude controller, given the estimate of the external force.
+	\section{Academic events}
+		\paragraph{Conferences}
+		\paragraph{Journals}
+			\begin{itemize}
+				\item Journal of advanced transportation \footnote{\url{https://www.hindawi.com/journals/jat/}} 
+			\end{itemize}
+	\bibliography{/home/donkarlo/Dropbox/projs/research/refs.bib}
+\end{document}

@@ -1,0 +1,114 @@
+\documentclass{article}
+\usepackage{comment}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\DeclareMathOperator*{\argmax}{argmax}
+\pagenumbering{arabic}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Mohammad Rahmani}
+\lhead{Robotics}
+
+\newcommand{\ignore}[1]{}
+\begin{document}
+	\bibliographystyle{plainnat}
+	\title{Robotics}
+	\author{Mohammad Rahmani}
+	\date{}
+	\maketitle
+	Each Robot is a physical Intelligent Agent(IA) \citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}.  
+	\section{Coordinative MRS}
+		\paragraph{Loose}
+		Loose coordination examples include formation control and foraging
+		\paragraph{Tight}
+		Tight include object transport and robot soccer.
+	\section{Cooperative MRS}
+		\paragraph{Cooperative interaction}  is a set of robotic agents that share the same goal and the agents are aware of other agents’ existence. Examples include search and rescue, exploration, and object  displacement\citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}. It is considered
+		by some of the more challenging interactions due to the need for high correlation and synchronization between agents
+		and time sensitivity of agents’ actions, especially in robotics  \citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}. 
+		\subsection{Application Of RL} Incorporating RL to robotic systems requires additional considerations due to
+		the physical constraints imposed by real-world environments and has been studied in Reference
+		\citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[108].
+		 
+    \section{Formation control}
+    	\cite{}
+    	\paragraph{Leader-follower}
+    \section{Decision making / Planning} 
+    	Decisions related to robot actions, information sharing, and coalition formation, are essential to the successful deployment of robots in real world environments.
+    	
+    	\paragraph{Challenges robotic decision making}
+    		\begin{itemize}
+    			\item Environment uncertainty
+    			\item robot actuating
+    			\item sensing diversity
+    			\item system scalability
+    			\item real-time processing
+    			\item limited computational resources
+    		\end{itemize}
+   		\paragraph{Decisions that make robot deployment successful}
+   			\begin{itemize}
+   				\item  robot actions
+   				\item  information sharing
+   				\item  coalition formation
+   			\end{itemize}
+   		
+   		
+   		\subsection{POSG(Game Theory: Partially Observable Stochastic Games)}
+   		POSG has been applied to multiple problems in robotics \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[148], \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[149]. 
+   		\\
+   		Combining game theory with some heuristic approaches such as deep learning might lead to improved performance in robotic applications and others \citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}.
+   		
+   		\\
+   		Some models have gained popularity in \textbf{cooperative MAS} due to the \textbf{agents’ capabilities} of \textbf{modeling other agents} in the game. (Perfect in \textbf{Multi-robot systems} in which \textbf{communication} is \textbf{not available})\citep{rizk-2018-decision-making-in-multiagent-systems-a-survey}.
+   		
+   		\subsection{MDP(Markov Decision Process)}
+   			MDPs \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[150] shows a use case of MDP in robotics decision making.  
+   			
+   			\paragraph{POMDP(Partially Observable MDP)} POMDP \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[151]–[155] have been used for robotics coordination including robot soccer \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[156].
+   			
+			The multiagent team decision problem \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[97], equivalent to Dec-POMDP when agents have perfect recall \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[98], extends economic team theory to robotics.  It includes models for implicit and explicit communication and is proven to be NEXP-complete. 
+			
+			\paragraph{Insight}  Deep learning has allowed the extension of MDPs from the discrete space to the
+			continuous space, which is more suitable for robotic MAS.
+			
+   		
+   		\subsection{Swarm intelligence}
+   		in robotics \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[10]–[14] has been applied to underwater environments \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[160], 3-D space \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[129], and robot path planning problems \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[30], [125]. It has been applied to dynamic task allocation \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[161], distributed localization problems \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[162], foraging tasks \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[163]–[165], collision free navigation \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[166], [167], and communication free flocking with minimal memory requirements \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[168].  
+   		
+   		Swarm-bots, wheeled robots that can physically connect to each other and form larger entities, accomplished coordinated motion, self-assembly, cooperative transport, goal search, and path formation \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[169], [170]. The thermotactic behavior of honeybees inspired the decision making of a swarm of microbots with limited communication capabilities in spatial behavior problems \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[171]. Swarmanoids, a heterogeneous system composed of three types of complementary swarm robots, performed
+   		complex tasks like object retrieval in 3-D space \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[129].
+   		\paragraph{Insight} 
+  	    While swarm-based systems are robust, flexible, scalable, computationally inexpensive, and fault tolerant \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[29, 55], robots are generally homogeneous or can be divided into a small number of clusters of homogeneous robots, which greatly restricts MRS applications \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[55]. More details on
+		   		swarm robotics can be found in these recent surveys \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[19, 21, 29, 154].
+   		
+   		\subsection{Graphical models}
+   		Graphical models for consensus \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[157], formation \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[158], [159], and rendezvous \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}[158] have also been investigated.
+   		
+   		\subsection{other approaches} 
+   		\paragraph{box pushing} Validation on box pushing and sensor distribution demonstrated the superior performance of this algorithm compared to other approached. 
+   		
+   		\paragraph{Sparse interaction} Sparse interaction to negotiate equilibrium sets and transfer knowledge in multiagent RL reduced computational complexity and led to better coordination and scalability, as shown by simulations on grid world games and robots shelving items in a warehouse \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[240]. Information sharing has been modeled as a MDP to reduce communication overhead without affecting performance \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[12]. 
+   		Sub-optimal policies for decentralized POMDP were computed using a factored forward-sweep policy computation algorithm that reduced computational complexity and improved scalability
+   		\citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[149]. Simulations on hundreds of agents showed the improved scalability with minimal loss in accuracy. An RL inference model that learned MRS configurations and allowed robot systems to complete a task knowing the intermediary robot states and transitions was also developed \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[206]. Other approaches include dynamic programming \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[168], expectation maximization \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[202], heuristic search algorithms \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[203], temporal difference learning \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[63], policy search [26], evolutionary computing \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[227], genetic algorithms \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[61], neural networks \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[82], optimization algorithms [59], Monte
+   		Carlo methods \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[197] and deep RL approaches \citet{rizk-2019-cooperative-heterogeneous-multi-robot-systems-a-survey}[138].
+   		\subsection{Challenges}
+   			See Challenges in Multi-agent systems
+   			\paragraph{Computational complexity} Robots generally have limited on board computational resources due to size and weight constraints and might not be able to offload their computations to the cloud due to bandwidth scarcity, poor or unreliable connectivity, and minimum latency requirements. 
+   	\section{Cognitive robotics}
+   	\url{https://en.wikipedia.org/wiki/Cognitive_robotics}	
+   		\subsection{Knowledge acquisition}
+   		A more complex learning approach is "autonomous knowledge acquisition": the robot is left to explore the environment on its own. A system of goals and beliefs is typically assumed.
+   		
+   		A somewhat more directed mode of exploration can be achieved by "curiosity" algorithms, such as Intelligent Adaptive Curiosity(see \url{http://www.pyoudeyer.com/oudeyer-kaplan-neurorobotics.pdf} and \url{http://science.slc.edu/~jmarshall/papers/cbim-epirob09.pdf}) or Category-Based Intrinsic Motivation.[3] These algorithms generally involve breaking sensory input into a finite number of categories and assigning some sort of prediction system (such as an Artificial Neural Network) to each. The prediction system keeps track of the error in its predictions over time. Reduction in prediction error is considered learning. The robot then preferentially explores categories in which it is learning (or reducing prediction error) the fastest.
+ 	\section{Terms and Definitions} 
+ 		\paragraph{Foraging} Foraging robots are mobile robots capable of searching for and, when found, transporting objects to one or more collection points.  
+ 		
+	\bibliography{/home/donkarlo/Dropbox/projs/research/refs.bib}
+\end{document}
