@@ -27,7 +27,8 @@
 	\author{Mohammad Rahmani}
 	\date{}
 	\maketitle
-	
+	\section{Platforms}
+		\cite{mrs-felk-cvut-cz-2020-micro-aerial-vehicles-platforms}
 	\section{Motion planning (Estimation, control, and planning )/Path planning}
 		\paragraph{General definition}
 		The fundamental problem of motion planning is obtaining a collision-free path from start to goal for a robot that moves in a
@@ -96,11 +97,15 @@
 			It deals with techniques such as Kolman filter. 
 			See footnote \footnote{\url{https://www.mdpi.com/2504-446X/3/1/19}}. 
 				\subparagraph{UKF}
-			\paragraph{Simultaneous Localization and Mapping (SLAM)}
-				\subparagraph{Visual-inertial }
-				\cite{nikolic-2014-a-synchronized-visual-inertial-sensor-system-with-fpga-pre-processing-for-accurate-real-time-slam}
-				\cite{bloesch-2015-robust-visual-inertial-odometry-using-a-direct-ekf-based-approach}
-				See footnote \footnote{\url{https://www.sciencedirect.com/science/article/pii/S2405896317302859}}
+			\subsubsection{Localization}
+				\paragraph{Simultaneous Localization and Mapping (SLAM)}
+					\subparagraph{Visual-inertial }
+					\cite{nikolic-2014-a-synchronized-visual-inertial-sensor-system-with-fpga-pre-processing-for-accurate-real-time-slam}
+					\cite{bloesch-2015-robust-visual-inertial-odometry-using-a-direct-ekf-based-approach}
+					See footnote \footnote{\url{https://www.sciencedirect.com/science/article/pii/S2405896317302859}}
+				\paragraph{With smart phones}
+					See footnote \footnote{\url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6308659/#B5-sensors-18-04161}}
+			
 		\subsection{General}
 			\cite{powers-2015-quadrotor-kinematics-and-dynamics}
 			Four forces of flight
@@ -142,13 +147,17 @@
 			\end{itemize}
 		\paragraph{Proprioceptive sensors}
 			\url{https://3dinsider.com/drone-sensors/}
-			\paragraph{Accelerometer}: Measures acceleration in all 3 axis
-			\paragraph{Gyroscope}: Measure angular rate in all 3 axis
+			
 			\paragraph{Compass}: Determines heading
 			\paragraph{GPS}: Determines position based on GPS/GLONASS satellites
 			\paragraph{Power module}: Power supply to flight controller
 			\paragraph{mmWave sensor}
 			\paragraph{IMU}: Inertial measurement unit \url{https://en.wikipedia.org/wiki/Inertial_measurement_unit}
+				is composed of 
+				\begin{itemize}
+					\item \textbf{Accelerometer}: Measures acceleration in all 3 axis
+					\item \textbf{Gyroscope}: Measure angular rate in all 3 axis
+				\end{itemize}
 				\subparagraph{MEMS inertial sensors}
 				See footnote for their application\footnote{\url{https://ieeexplore.ieee.org/document/4610859}}
 			\paragraph{Force sensors}: Such as this company \footnote{\url{https://www.tekscan.com/products-solutions/embedded-force-sensors}}

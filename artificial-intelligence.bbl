@@ -1,0 +1,62 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bratman(1999)]{bratman-1999-intention-plans-and-practical-reason}
+Michael Bratman.
+\newblock \emph{Intention, plans, and practical reason}.
+\newblock Center for the Study of Language and Information, 1999.
+
+\bibitem[Ciprich et~al.(2008)Ciprich, Duz{\'{\i}}, Frydrych, Kohut, and
+  Kosin{\'{a}}r]{ciprich-2008-the-architecture-of-an-intelligent-agent-in-mas}
+Nikola Ciprich, Marie Duz{\'{\i}}, Tom{\'{a}}s Frydrych, Ondrej Kohut, and
+  Michal Kosin{\'{a}}r.
+\newblock The architecture of an intelligent agent in {MAS}.
+\newblock 2008.
+
+\bibitem[Kanapram et~al.(2019)Kanapram, Campo, Baydoun, Marcenaro, Bodanese,
+  Regazzoni, and
+  Marchese]{kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things}
+D.~Kanapram, Damian~Andres Campo, Mohamad Baydoun, Lucio Marcenaro, Eliane~L.
+  Bodanese, Carlo~S. Regazzoni, and Mario Marchese.
+\newblock Dynamic bayesian approach for decision-making in ego-things.
+\newblock \emph{2019 IEEE 5th World Forum on Internet of Things (WF-IoT)},
+  pages 909--914, 2019.
+
+\bibitem[Mikolov et~al.(2016)Mikolov, Joulin, and
+  Baroni]{mikolov-2016-a-roadmap-towards-machine-intelligence}
+Tomas Mikolov, Armand Joulin, and Marco Baroni.
+\newblock A roadmap towards machine intelligence.
+\newblock volume 9623 of \emph{Lecture Notes in Computer Science}, pages
+  29--61. Springer, 2016.
+
+\bibitem[Ngobye et~al.(2010)Ngobye, de~Groot, and van~der
+  Weide]{ngobye-2010-types-and-priorities-of-multi-agent-system-interactions}
+Martin Ngobye, Wouter~T. de~Groot, and Theo~P. van~der Weide.
+\newblock Types and priorities of multi-agent system interactions.
+\newblock \emph{Interdisciplinary Description of Complex Systems - scientific
+  journal}, 8\penalty0 (1):\penalty0 49--58, 2010.
+
+\bibitem[{Regazzoni} et~al.(2020){Regazzoni}, {Marcenaro}, {Campo}, and
+  {Rinner}]{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}
+C.~S. {Regazzoni}, L.~{Marcenaro}, D.~{Campo}, and B.~{Rinner}.
+\newblock Multisensorial generative and descriptive self-awareness models for
+  autonomous systems.
+\newblock volume 108, pages 987--1010, 2020.
+
+\bibitem[Rizk et~al.(2018)Rizk, Awad, and
+  Tunstel]{rizk-2018-decision-making-in-multiagent-systems-a-survey}
+Yara Rizk, Mariette Awad, and Edward~W. Tunstel.
+\newblock Decision making in multiagent systems: {A} survey.
+\newblock \emph{{IEEE} Trans. Cogn. Dev. Syst.}, 10\penalty0 (3):\penalty0
+  514--529, 2018.
+
+\bibitem[Wikipedia(2020)]{wikipedia-2020-intelligent-agent}
+Wikipedia.
+\newblock Intelligent agent, 09 2020.
+\newblock URL \url{https://en.wikipedia.org/wiki/Intelligent_agent}.
+
+\end{thebibliography}

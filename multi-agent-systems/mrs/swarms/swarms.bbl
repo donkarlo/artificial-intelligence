@@ -1,0 +1,22 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Brambilla et~al.(2013)Brambilla, Ferrante, Birattari, and
+  Dorigo]{brambilla-2013-swarm-robotics-a-review-from-the-swarm-engineering-perspective}
+Manuele Brambilla, Eliseo Ferrante, Mauro Birattari, and Marco Dorigo.
+\newblock Swarm robotics: A review from the swarm engineering perspective.
+\newblock \emph{Swarm Intelligence}, 7:\penalty0 1--41, 03 2013.
+\newblock \doi{10.1007/s11721-012-0075-2}.
+
+\bibitem[Rizk et~al.(2018)Rizk, Awad, and
+  Tunstel]{rizk-2018-decision-making-in-multiagent-systems-a-survey}
+Yara Rizk, Mariette Awad, and Edward~W. Tunstel.
+\newblock Decision making in multiagent systems: {A} survey.
+\newblock \emph{{IEEE} Trans. Cogn. Dev. Syst.}, 10\penalty0 (3):\penalty0
+  514--529, 2018.
+
+\end{thebibliography}

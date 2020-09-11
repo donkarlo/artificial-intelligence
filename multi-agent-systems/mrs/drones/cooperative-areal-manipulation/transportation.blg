@@ -3,13 +3,13 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: transportation.aux
 The style file: plainnat.bst
 Database file #1: /home/donkarlo/Dropbox/projs/research/refs.bib
-Repeated entry---line 193 of file /home/donkarlo/Dropbox/projs/research/refs.bib
+Repeated entry---line 207 of file /home/donkarlo/Dropbox/projs/research/refs.bib
  : @inproceedings{thapa-2019-cooperative-aerial-load-transport-with-attitude-stabilization
  :                                                                                        ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "marina-2019-flexible-collaborative-transportation-by-a-team-of-rotorcraft" isn't style-file defined
---line 262 of file /home/donkarlo/Dropbox/projs/research/refs.bib
-Repeated entry---line 345 of file /home/donkarlo/Dropbox/projs/research/refs.bib
+--line 276 of file /home/donkarlo/Dropbox/projs/research/refs.bib
+Repeated entry---line 359 of file /home/donkarlo/Dropbox/projs/research/refs.bib
  : @inproceedings{mellinger-2010-cooperative-grasping-and-transport-using-multiple-quadrotors
  :                                                                                           ,
 I'm skipping whatever remains of this entry
@@ -33,45 +33,45 @@ Warning--empty journal in vasarhelyi-2014-outdoor-flocking-and-formation-flight-
 Warning--empty journal in villa-2019-a-survey-on-load-transportation-using-multirotor-uavs
 Warning--empty booktitle in wu-2020-cooperative-transportation-of-drones-without-inter-agent-communication
 Warning--empty booktitle in han-2010-collective-decision-making-in-multi-agent-systems-by-implicit-leadership
-You've used 40 entries,
+You've used 41 entries,
             2773 wiz_defined-function locations,
-            766 strings with 15342 characters,
-and the built_in function-call counts, 20675 in all, are:
-= -- 1705
-> -- 1476
+            774 strings with 15610 characters,
+and the built_in function-call counts, 21205 in all, are:
+= -- 1751
+> -- 1515
 < -- 16
-+ -- 494
-- -- 453
-* -- 1707
-:= -- 3148
-add.period$ -- 120
-call.type$ -- 40
-change.case$ -- 270
-chr.to.int$ -- 39
-cite$ -- 100
-duplicate$ -- 931
-empty$ -- 1570
-format.name$ -- 505
-if$ -- 4346
++ -- 507
+- -- 465
+* -- 1758
+:= -- 3233
+add.period$ -- 124
+call.type$ -- 41
+change.case$ -- 277
+chr.to.int$ -- 40
+cite$ -- 102
+duplicate$ -- 952
+empty$ -- 1607
+format.name$ -- 518
+if$ -- 4455
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 38
-newline$ -- 208
-num.names$ -- 160
-pop$ -- 621
+missing$ -- 39
+newline$ -- 214
+num.names$ -- 164
+pop$ -- 632
 preamble$ -- 1
-purify$ -- 230
+purify$ -- 236
 quote$ -- 0
-skip$ -- 760
+skip$ -- 775
 stack$ -- 0
-substring$ -- 512
-swap$ -- 125
+substring$ -- 526
+swap$ -- 127
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 440
+type$ -- 451
 warning$ -- 20
-while$ -- 146
+while$ -- 150
 width$ -- 0
-write$ -- 482
+write$ -- 497
 (There were 2 error messages)

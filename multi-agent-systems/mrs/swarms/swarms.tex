@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage{comment}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\DeclareMathOperator*{\argmax}{argmax}
+\pagenumbering{arabic}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Mohammad Rahmani}
+\lhead{Swarm intelligence}
+
+\newcommand{\ignore}[1]{}
+\begin{document}
+	\bibliographystyle{plainnat}
+	\title{Swarm intelligence}
+	\author{Mohammad Rahmani}
+	\date{}
+	\maketitle
+	Swarm intelligence describes the behavior of decentral-
+	ized cooperative agents, whether natural or artificial, working
+	toward a common global goal \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[120]. Self-organized and distributed behavior of locally aware and locally interacting
+	agents are pillars of swarm intelligence \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[121].Systems mod-
+	eled in this fashion generally consist of many autonomous but
+	homogeneous agents implementing simple rules with agent
+	interactions restricted to local neighborhoods.
+	
+	\paragraph{Insights}
+		\subparagraph{Advantages}
+	While such systems exhibit desirable properties like robustness, flexibility, scalability, low complexity, inherent parallelism, and fault tolerance \cite{brambilla-2013-swarm-robotics-a-review-from-the-swarm-engineering-perspective}, \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[129], 
+		\paragraph{Disadvantages} They have important
+	limitations. Most swarm systems consist of identical agents,
+	leading to their limitations according to \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[129]. The agents must
+	be homogeneous or can be divided into a small number of homogeneous clusters following simple rules to make decisions. However, there are many applications, such as search and rescue operations, that require heterogeneous, complex
+	agents working toward a common goal.
+	
+	
+	\paragraph{Similarity with RL}  In some ways, swarm intelligence is similar to RL; both
+	are iterative algorithms that use a reinforcement signal to learn
+	a solution \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[121]
+	
+	
+	\paragraph{Particle swarm optimization}
+	\paragraph{Communication}
+	\paragraph{Trajectory tracking}
+	
+	\section{Biology}
+		\paragraph{Cells}
+			\subparagraph{Migration}
+			See footnote \footnote{\url{https://en.wikipedia.org/wiki/Collective_cell_migration}}
+		\paragraph{Bees}
+			\subparagraph{Path planning}
+			Many algorithms have been inspired by bee colony behavior.
+			Bee colony optimization \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[122] is based on direct communication among agents performing a series of moves for a certain
+			duration based on the strength or fitness of the solution, also
+			known as “waggle dancing.” This recruits other agents to the
+			most fit solution. Navigation is based on path integration where
+			agents continuously update a vector indicating the position of
+			the start location.
+		\paragraph{Ants}
+			\subparagraph{Path planning}
+			Ant colony optimization (ACO), inspired
+			by ant colony behavior, is a class of algorithms that rely on
+			indirect communication \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[123]. Navigation is based on deposit-
+			ing pheromones along the trail. A more fit solution results
+			in stronger pheromones on the trail that lead to recruiting
+			more agents. Distributed
+			implementations of ACO \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[126], \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[127]
+		\paragraph{Birds}
+			\subparagraph{}PSO is inspired by flocks of bird and schools of fish \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[124]. Agents navigate the environment searching for better solutions using principles from birds’ movements. Distributed
+				implementations of PSO \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[128] have
+				been developed to speedup convergence.
+				
+			\subparagraph{Pigeon Swarm optimization for path planning}
+				A pigeon inspired optimization algorithm relied on the magnetic field, sun and landmarks to achieve path planning \cite{rizk-2018-decision-making-in-multiagent-systems-a-survey}[125] have
+				been developed to speedup convergence.
+			\subparagraph{Boids}
+				See footnote \footnote{\url{https://en.wikipedia.org/wiki/Boids}}
+	\section{Communication}
+		Reference \footnote{\url{https://ieeexplore.ieee.org/document/4413635}}
+	\bibliography{/home/donkarlo/Dropbox/projs/research/refs}
+\end{document}

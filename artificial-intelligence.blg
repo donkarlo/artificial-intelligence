@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: artificial-intelligence.aux
+The style file: plainnat.bst
+Database file #1: /home/donkarlo/Dropbox/projs/research/refs.bib
+Warning--entry type for "wikipedia-2020-intelligent-agent" isn't style-file defined
+--line 1 of file /home/donkarlo/Dropbox/projs/research/refs.bib
+Warning--empty booktitle in ciprich-2008-the-architecture-of-an-intelligent-agent-in-mas
+Warning--empty booktitle in mikolov-2016-a-roadmap-towards-machine-intelligence
+Warning--empty booktitle in regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems
+Warning--can't use both volume and number fields in regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems
+You've used 8 entries,
+            2773 wiz_defined-function locations,
+            644 strings with 6773 characters,
+and the built_in function-call counts, 4217 in all, are:
+= -- 358
+> -- 263
+< -- 7
++ -- 89
+- -- 81
+* -- 349
+:= -- 631
+add.period$ -- 25
+call.type$ -- 8
+change.case$ -- 50
+chr.to.int$ -- 8
+cite$ -- 20
+duplicate$ -- 193
+empty$ -- 333
+format.name$ -- 89
+if$ -- 895
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 8
+newline$ -- 48
+num.names$ -- 32
+pop$ -- 115
+preamble$ -- 1
+purify$ -- 43
+quote$ -- 0
+skip$ -- 158
+stack$ -- 0
+substring$ -- 139
+swap$ -- 38
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 83
+warning$ -- 4
+while$ -- 34
+width$ -- 0
+write$ -- 108
+(There were 5 warnings)

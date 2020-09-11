@@ -32,18 +32,29 @@
 			\cite{baca-2018-model-predictive-trajectory-tracking-and-collision-avoidance-for-reliable-outdoor-deployment-of-unmanned-aerial-vehicles}
 			\url{https://www.youtube.com/watch?v=pmZZzIXIIsc}
 			\url{https://www.youtube.com/watch?v=rJfQncmWpCo\&feature=youtu.be} show application of monocular vision in even tight formations.
-		\subsection{Trajectory tracking}
+	\section{Trajectory tracking}
+		\cite{baca-2018-model-predictive-trajectory-tracking-and-collision-avoidance-for-reliable-outdoor-deployment-of-unmanned-aerial-vehicles}
+		\paragraph{Algorithms}
+			\subparagraph{Using both a linear model predictive controller (MPC) and non-linear state feedback}
 			\cite{baca-2018-model-predictive-trajectory-tracking-and-collision-avoidance-for-reliable-outdoor-deployment-of-unmanned-aerial-vehicles}
-			\paragraph{Algorithms}
-				\subparagraph{Using both a linear model predictive controller (MPC) and non-linear state feedback}
-				\cite{baca-2018-model-predictive-trajectory-tracking-and-collision-avoidance-for-reliable-outdoor-deployment-of-unmanned-aerial-vehicles}
 	\section{Formation Control}
 		\cite{mora-2018-distributed-multi-robot-formation-control-in-dynamic-environments}
 		\cite{mora-2017-multi-robot-formation-control-and-object-transport-in-dynamic-environments-via-constrained-optimization}
 		\paragraph{Leader-follower}
+		\paragraph{Flocking}
+			Three rules of Flocking \citep{reynolds-1987-flocks-herds-and-schools-a-distributed-behavioral-model}
+			\begin{itemize}
+				\item separation at short-range to avoid collisions
+				\item local interactions (alignment rules) for aligning velocity vectors 
+				\item long-range attraction of individuals to keep the group flight together
+			\end{itemize}
+			\begin{itemize}
+				\item  consensus-based flocking
+			\end{itemize}
 	\section{Self-assemble}
 		\cite{saldana-2018-modquad-the-flying-modular-structure-that-self-assembles-in-midair}
 	\section{Localization}
+		Kalman filter and Particle filter
 		\paragraph{GNSS-based state estimation}
 			\cite{spurny-2017-cooperative-autonomous-search-grasping-and-delivering-in-a-treasure-hunt-scenario-by-a-team-of-uavs}
 		\paragraph{Light-based}
@@ -52,6 +63,8 @@
 	\cite{spurny-2017-cooperative-autonomous-search-grasping-and-delivering-in-a-treasure-hunt-scenario-by-a-team-of-uavs}
 	\section{Cooperative navigation}
 	\cite{spurny-2017-cooperative-autonomous-search-grasping-and-delivering-in-a-treasure-hunt-scenario-by-a-team-of-uavs}
+	
+	\section{}
 	\section{Communication}
 	\bibliography{/home/donkarlo/Dropbox/projs/research/refs.bib}
 \end{document}

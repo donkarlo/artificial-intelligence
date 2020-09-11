@@ -52,14 +52,29 @@
 	 
 	 It can be a \textbf{physical entity such as robots with sensors and actuators} or a\textbf{ virtual entity such as software agents}. A very good philosophical discussion on IA can be found at \cite{ngobye-2010-types-and-priorities-of-multi-agent-system-interactions}.
 	 
+	 
+	 
+	 \paragraph{Different types of agents}
+	 	\begin{itemize}
+	 		\item simple reflex agents
+	 		\item model-based reflex agents
+	 		\item goal-based agents
+	 		\item utility-based agents
+	 		\item learning agents
+	 	\end{itemize}
+	 	\paragraph{Goal based agents}
+	 	Russell, S.J., Norvig, P.: Artificial Intelligence: A Modern Approach,
+	 	2nd edn. Prentice Hall Press, Upper Saddle River, NJ, USA (2003)
+	 	
+	 	Goal-based agents further expand on the capabilities of the model-based agents, by using "goal" information. Goal information describes situations that are desirable. This allows the agent a way to choose among multiple possibilities, selecting the one which reaches a goal state. Search and planning are the subfields of artificial intelligence devoted to finding action sequences that achieve the agent's goals \cite{wikipedia-2020-intelligent-agent}.
+	 
 	 \paragraph{Ego-thing} go-Things are defined as intelligent
 	 systems that perceive their internal parameters and adapt them-
 	 selves when facing non-stationary situations. \citet{kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things}[5]
 	 
 	 \paragraph{Qualities of a self-aware IA}
 	 (see document on self-awareness)
-	 Must implement well the following characteristics from self awareness point of view which are core capabilities of agents operating
-	 in highly dynamic, interactive, and uncertain environments
+	 Must implement well the following characteristics from self awareness point of view which are core capabilities of agents operating in highly dynamic, interactive, and uncertain environments
 	 in order to achieve reasonable autonomy.
 	 \begin{itemize}
 	 	\item initialization
@@ -68,16 +83,12 @@
 	 	\item model creation
 	 	\item interface with control
 	 \end{itemize}
-	  However, genuine autonomous systems are required to fulfill a variety of sys-
-	 tem properties, including efficiency (minimizing the resource
-	 consumption), security (protecting against threads), and safety
+	  However, genuine autonomous systems are required to fulfill a variety of system properties, including efficiency (minimizing the resource consumption), security (protecting against threads), and safety
 	 (operating in conformance with requirements).
 	 
 	 \paragraph{Brain in an IA} Agents \textbf{communicate} with each other, and \textbf{make decisions} on their own in order to achieve their individual as well as collective goals. To this end they are equipped with a  ‘brain’ \citep{ciprich-2008-the-architecture-of-an-intelligent-agent-in-mas}.
 	 
-	 \paragraph{Self-awareness} self-awareness (SA) is a capability of an autonomous system to describe the acquired
-	 experience about itself and its surrounding environment with appropriate models and correlate them incrementally with the
-	 currently perceived situation to expand its knowledge continuously. At a rather abstract level, SA can be defined as the capacity to become the object of one’s own attention, which arises when an agent focuses not only on the external environment but also on the internal milieu. \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}. Private self-aspects relate to externally unobservable events and characteristics such as emotions, physiological sensations, perceptions, values, goals, and motives, whereas public self-aspects are visible attributes such as behavior and physical appearance.
+	 \paragraph{Self-awareness} self-awareness (SA) is a capability of an autonomous system to describe the acquired experience about itself and its surrounding environment with appropriate models and correlate them incrementally with the currently perceived situation to expand its knowledge continuously. At a rather abstract level, SA can be defined as the capacity to become the object of one’s own attention, which arises when an agent focuses not only on the external environment but also on the internal milieu. \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}. Private self-aspects relate to externally unobservable events and characteristics such as emotions, physiological sensations, perceptions, values, goals, and motives, whereas public self-aspects are visible attributes such as behavior and physical appearance.
 	 
 	 
 	 \paragraph{Belief-Desire-Intentions (BDI)-like definition}
@@ -151,12 +162,9 @@
  		\paragraph{Evaluation} \citet{rizk-2018-decision-making-in-multiagent-systems-a-survey}
  			\begin{itemize}
  				\item policy optimality: A policy is optimal if it has the highest utility
- 				
  				\item search completeness: A search algorithm is complete if it guarantees to return an optimal policy
  				in finite time, when it exists.
- 				
  				\item time complexity: Time complexity quantifies the amount of time needed to search for a solution 
- 				
  				\item space complexity: quantifies the amount of computational memory
  				needed.
  			\end{itemize}

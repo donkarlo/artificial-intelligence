@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.24)  26 AUG 2020 12:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.24)  31 AUG 2020 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -408,80 +408,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--79
  []
 
 [2] [3]
-Overfull \hbox (22.46246pt too wide) in paragraph at lines 130--132
+Overfull \hbox (22.46246pt too wide) in paragraph at lines 134--136
  \OT1/cmr/bx/n/10 Al-ti-tude me-ter[] $\OT1/cmtt/m/n/10 http : / / downloads . 
 hindawi . com / journals / mpe / 2013 / 587098 .
  []
 
 
-Overfull \hbox (29.96896pt too wide) in paragraph at lines 130--132
+Overfull \hbox (29.96896pt too wide) in paragraph at lines 134--136
 \OT1/cmtt/m/n/10 pdf$ $https : / / www . researchgate . net / publication / 309
 486306 _ Altitude _ Control _
  []
 
 
-Overfull \hbox (274.74464pt too wide) in paragraph at lines 133--134
+Overfull \hbox (274.74464pt too wide) in paragraph at lines 137--138
 \OT1/cmtt/m/n/10 dronezon . com / learn-[]about-[]drones-[]quadcopters / top-[]
 drones-[]with-[]obstacle-[]detection-[]collision-[]avoidance-[]sensors-[]explai
 ned/$ 
  []
 
 [4]
-Overfull \hbox (12.87329pt too wide) in paragraph at lines 151--152
+Overfull \hbox (12.87329pt too wide) in paragraph at lines 155--156
  \OT1/cmr/bx/n/10 IMU[] \OT1/cmr/m/n/10 : In-er-tial mea-sure-ment unit $\OT1/c
 mtt/m/n/10 https : / / en . wikipedia . org / wiki / Inertial _
  []
 
 
-Overfull \hbox (37.09578pt too wide) in paragraph at lines 159--160
+Overfull \hbox (37.09578pt too wide) in paragraph at lines 163--164
  \OT1/cmr/bx/n/10 giuseppe-loianno[] $\OT1/cmtt/m/n/10 https : / / engineering 
 . nyu . edu / faculty / giuseppe-[]loianno$
  []
 
 
-Overfull \hbox (11.4974pt too wide) in paragraph at lines 160--161
+Overfull \hbox (11.4974pt too wide) in paragraph at lines 164--165
  \OT1/cmr/bx/n/10 Byung Joon Lee[] $\OT1/cmtt/m/n/10 https : / / scholar . goog
 le . it / citations ? hl = en \ &user =
  []
 
 
-Overfull \hbox (7.24693pt too wide) in paragraph at lines 160--161
+Overfull \hbox (7.24693pt too wide) in paragraph at lines 164--165
 \OT1/cmtt/m/n/10 aH-[]8urcAAAAJ \ &view _ op = list _ works \ &citft = 1 \ &cit
 ft = 2 \ &citft = 3 \ &email _
  []
 
 
-Overfull \hbox (75.49634pt too wide) in paragraph at lines 160--161
+Overfull \hbox (75.49634pt too wide) in paragraph at lines 164--165
 \OT1/cmtt/m/n/10 for _ op = mohammad . rahmani . xyz % 40gmail . com & gmla = A
 JsN-[]F44tTmgP _ 9kMnERit5P2Ot03MYngw _
  []
 
 
-Overfull \hbox (96.49615pt too wide) in paragraph at lines 160--161
+Overfull \hbox (96.49615pt too wide) in paragraph at lines 164--165
 \OT1/cmtt/m/n/10 9qmDB904GX0B07sXFFGoUhMC6yh8sDwCgsw4oinKq2ljx02YbwB2aCBCteHQ1i
 y9XzFBNYCV3Sns-[]MylEhG _
  []
 
 
-Overfull \hbox (138.99579pt too wide) in paragraph at lines 160--161
+Overfull \hbox (138.99579pt too wide) in paragraph at lines 164--165
 \OT1/cmtt/m/n/10 BAr8GXXGWZ5-[]sY2 _ lLla6jboK51H _ 6qvayyc9RJCa-[]kMYAsFVkWwL2
 OAsBpJwH8LRJ0OgzcQOT96WiKX5IV4iufgari _
  []
 
 
-Overfull \hbox (102.74611pt too wide) in paragraph at lines 160--161
+Overfull \hbox (102.74611pt too wide) in paragraph at lines 164--165
 \OT1/cmtt/m/n/10 ZHz5-[]pVDhfhYAYfYbTN0laxLY12wXx0-[]2Q1nhWKMm _ i14YH3C9J _ Uw
 hicmXuQun-[]3MJHG5EH3QJI5EsJWUz7 _
  []
 
 
-Overfull \hbox (1.60886pt too wide) in paragraph at lines 162--163
+Overfull \hbox (1.60886pt too wide) in paragraph at lines 166--167
  \OT1/cmr/bx/n/10 Vi-jay ku-mar[] \OT1/cmr/m/n/10 Scholar $\OT1/cmtt/m/n/10 htt
 ps : / / scholar . google . com / citations ? hl = en \
  []
 
 (./drone.bbl
-Overfull \hbox (51.67763pt too wide) in paragraph at lines 165--1
+Overfull \hbox (51.67763pt too wide) in paragraph at lines 169--1
  \OT1/cmr/bx/n/10 Daniel Mellinger[] $\OT1/cmtt/m/n/10 https : / / scholar . go
 ogle . com / citations ? user = hI8nho4AAAAJ \
  []
@@ -509,7 +509,7 @@ fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb
 ></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on drone.pdf (7 pages, 187133 bytes).
+Output written on drone.pdf (7 pages, 188275 bytes).
 PDF statistics:
  85 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream
