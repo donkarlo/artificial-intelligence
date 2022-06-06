@@ -3,46 +3,48 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: drones.aux
 The style file: plainnat.bst
 Database file #1: /home/donkarlo/Dropbox/projs/research/refs.bib
+Warning--empty journal in mora-2018-distributed-multi-robot-formation-control-in-dynamic-environments
+Warning--empty journal in reynolds-1987-flocks-herds-and-schools-a-distributed-behavioral-model
 Warning--empty booktitle in spurny-2017-cooperative-autonomous-search-grasping-and-delivering-in-a-treasure-hunt-scenario-by-a-team-of-uavs
-You've used 3 entries,
+You've used 7 entries,
             2773 wiz_defined-function locations,
-            607 strings with 5891 characters,
-and the built_in function-call counts, 1830 in all, are:
-= -- 155
-> -- 108
-< -- 3
-+ -- 36
-- -- 33
-* -- 135
-:= -- 261
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 20
-chr.to.int$ -- 3
-cite$ -- 7
-duplicate$ -- 90
-empty$ -- 150
-format.name$ -- 38
-if$ -- 403
+            627 strings with 6916 characters,
+and the built_in function-call counts, 3917 in all, are:
+= -- 328
+> -- 253
+< -- 5
++ -- 85
+- -- 78
+* -- 310
+:= -- 580
+add.period$ -- 21
+call.type$ -- 7
+change.case$ -- 47
+chr.to.int$ -- 7
+cite$ -- 17
+duplicate$ -- 183
+empty$ -- 308
+format.name$ -- 87
+if$ -- 841
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 3
-newline$ -- 23
-num.names$ -- 12
-pop$ -- 51
+missing$ -- 7
+newline$ -- 43
+num.names$ -- 28
+pop$ -- 111
 preamble$ -- 1
-purify$ -- 17
+purify$ -- 40
 quote$ -- 0
-skip$ -- 79
+skip$ -- 154
 stack$ -- 0
-substring$ -- 70
-swap$ -- 25
-text.length$ -- 2
+substring$ -- 133
+swap$ -- 38
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 33
-warning$ -- 1
-while$ -- 13
+type$ -- 77
+warning$ -- 3
+while$ -- 28
 width$ -- 0
-write$ -- 44
-(There was 1 warning)
+write$ -- 92
+(There were 3 warnings)

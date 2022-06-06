@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -18,6 +18,11 @@ M.~{Bloesch}, S.~{Omari}, M.~{Hutter}, and R.~{Siegwart}.
 \newblock Robust visual inertial odometry using a direct ekf-based approach.
 \newblock In \emph{2015 IEEE/RSJ International Conference on Intelligent Robots
   and Systems (IROS)}, pages 298--304, 2015.
+
+\bibitem[CVUT(2020)]{mrs-felk-cvut-cz-2020-micro-aerial-vehicles-platforms}
+MRS~Felk CVUT.
+\newblock Micro aerial vehicles - platforms, 01 2020.
+\newblock URL \url{http://mrs.felk.cvut.cz/research/micro-aerial-vehicles}.
 
 \bibitem[Kamel et~al.(2016)Kamel, Burri, and
   Siegwart]{kamel-2016-linear-vs-nonlinear-mpc-for-trajectory-tracking-applied-to-rotary-wing-micro-aerial-vehicles}
@@ -59,7 +64,7 @@ G.~{Loianno}, C.~{Brunner}, G.~{McGrath}, and V.~{Kumar}.
 E.~Masehian and Yalda Katebi.
 \newblock Robot motion planning in dynamic environments with moving obstacles
   and target.
-\newblock \emph{World Academy of Science, Engineering and Technology,
+\newblock \emph{IntrestedRegion Academy of Science, Engineering and Technology,
   International Journal of Computer, Electrical, Automation, Control and
   Information Engineering}, 1:\penalty0 1249--1254, 2007.
 

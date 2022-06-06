@@ -1,9 +1,25 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alonso-Mora et~al.(2017)Alonso-Mora, Baker, and
+  Rus]{mora-2017-multi-robot-formation-control-and-object-transport-in-dynamic-environments-via-constrained-optimization}
+Javier Alonso-Mora, Stuart Baker, and Daniela Rus.
+\newblock Multi-robot formation control and object transport in dynamic
+  environments via constrained optimization.
+\newblock \emph{The International Journal of Robotics Research}, 36\penalty0
+  (9):\penalty0 1000--1021, 2017.
+
+\bibitem[Alonso-Mora et~al.(2018)Alonso-Mora, Montijano, Nägeli, Hilliges,
+  Schwager, and
+  Rus]{mora-2018-distributed-multi-robot-formation-control-in-dynamic-environments}
+Javier Alonso-Mora, Eduardo Montijano, Tobias Nägeli, Otmar Hilliges, Mac
+  Schwager, and Daniela Rus.
+\newblock Distributed multi-robot formation control in dynamic environments.
+\newblock 07 2018.
 
 \bibitem[{Baca} et~al.(2018){Baca}, {Hert}, {Loianno}, {Saska}, and
   {Kumar}]{baca-2018-model-predictive-trajectory-tracking-and-collision-avoidance-for-reliable-outdoor-deployment-of-unmanned-aerial-vehicles}
@@ -12,6 +28,18 @@ T.~{Baca}, D.~{Hert}, G.~{Loianno}, M.~{Saska}, and V.~{Kumar}.
   reliable outdoor deployment of unmanned aerial vehicles.
 \newblock In \emph{2018 IEEE/RSJ International Conference on Intelligent Robots
   and Systems (IROS)}, pages 6753--6760, 2018.
+
+\bibitem[Reynolds(1987)]{reynolds-1987-flocks-herds-and-schools-a-distributed-behavioral-model}
+Craig~W. Reynolds.
+\newblock Flocks, herds, and schools: {A} distributed behavioral model.
+\newblock 1987.
+
+\bibitem[{Saldana} et~al.(2018){Saldana}, {Gabrich}, {Li}, {Yim}, and
+  {Kumar}]{saldana-2018-modquad-the-flying-modular-structure-that-self-assembles-in-midair}
+D.~{Saldana}, B.~{Gabrich}, G.~{Li}, M.~{Yim}, and V.~{Kumar}.
+\newblock Modquad: The flying modular structure that self-assembles in midair.
+\newblock In \emph{2018 IEEE International Conference on Robotics and
+  Automation (ICRA)}, pages 691--698, 2018.
 
 \bibitem[Spurny and
   Thomas(2017)]{spurny-2017-cooperative-autonomous-search-grasping-and-delivering-in-a-treasure-hunt-scenario-by-a-team-of-uavs}
