@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{comment}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\DeclareMathOperator*{\argmax}{argmax}
+\pagenumbering{arabic}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Mohammad Rahmani}
+\lhead{Control Theory}
+
+\newcommand{\ignore}[1]{}
+\begin{document}
+	\bibliographystyle{plainnat}
+	\title{Control Theory}
+	\author{Mohammad Rahmani}
+	\date{}
+	\maketitle
+		\section{Melodic and ubuntu 18.04}
+			You should install melodic version\footnote{\url{http://wiki.ros.org/melodic/Installation/Ubuntu}} and then catkin for melodic version\footnote{\url{http://wiki.ros.org/action/fullsearch/catkin?action=fullsearch\&context=180\&value=linkto\%3A\%22catkin\%22}} of course first you need to install the dependencies which are mentioned at the bottom of this page\footnote{\url{https://stackoverflow.com/questions/58033243/how-to-install-ros-on-ubuntu-18-04}}
+		\section{Install ROS}
+		\section{Install Catkin}
+		\section{Setting a new workspace}
+		See Url at footnote \footnote{\url{https://blog.generationrobots.com/en/robotic-simulation-scenarios-with-gazebo-and-ros/}} for a full tutorial from workspace building to adding joints and rizk etc...
+		\paragraph{}
+		if you start from scratch and need to create a new workspace for your project. Let’s first source our ROS Hydro environment:
+		\begin{itemize}
+			\item \textbf{Make a workspace} $mkdir -p \sim\{\}/catkin\_ws/src$
+			\item \textbf{Navigate to it} $cd \sim/catkin\_ws/src$
+			\item \textbf{Initi it} $catkin\_init\_workspace$
+			\item \textbf{build of your (empty) workspace just to generate the proper setup files} 
+				\begin{itemize}
+					\item $cd ..$ 
+					\item $catkin_make$
+				\end{itemize}
+			\item \textbf{From now on, each time we’ll have to start ROS commands that imply using our packages, we’ll have to source the workspace environment in each terminal:} $source \sim/catkin\_ws/devel/setup.bash$
+		\end{itemize}
+	
+	\section{Multi-Vehicle Simulation with Gazebo}
+	See footnote \footnote{\url{https://dev.px4.io/v1.9.0/en/simulation/multi-vehicle-simulation.html}}
+	
+	\section{Drones}
+		\subsection{Multi drones}
+			\paragraph{RotorS Simulator} See URL \footnote{\url{https://www.autonomousrobotslab.com/rotors-simulator.html}}
+			\paragraph{p4x} 
+	\bibliography{/home/donkarlo/Dropbox/projs/research/refs.bib}
+\end{document}

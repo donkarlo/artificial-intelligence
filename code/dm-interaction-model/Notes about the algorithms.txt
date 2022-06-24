@@ -1,0 +1,23 @@
++ Raw Data: we have the original data (.bag) of 4 scenarios:
+1. PM
+2. PA
+3. ES
+4. Ushape
+
++ Data Extract: we have two algorithms:
+- messageExtract: to extract and save information from bag file
+         Input: bag file
+         Output: msg data (.mat)
+- ExtractAlignedData: to do alignement between modalities and than save Aligned data.
+         Input: msg data (.mat)
+         Output: genSyncdata (.mat)
+
++ Generated Data: Where generated and alignement information are saved for each scenario.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Since this work compares two different approaches for modeling 
+the interaction of multi-sensorial informatio:
+
++  Separately Technique
++  Jointly Technique
++  With alpha and beta
